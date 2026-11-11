@@ -320,6 +320,16 @@ footer.ft .cp{border-top:1px solid rgba(255,255,255,.14);margin-top:36px;padding
 @media (max-width:1000px){.cmp{grid-template-columns:1fr}footer.ft .fg{grid-template-columns:1fr}}
 @media (max-width:620px){.cmp{padding:22px}}
 .ex img.e8{object-position:top}
+
+.tabs{border-top:1px solid var(--line);background:#fff}
+.tabs .wrap{display:flex;justify-content:flex-start;gap:6px;overflow-x:auto;scrollbar-width:none;height:auto;padding-top:8px;padding-bottom:8px}
+.tabs .wrap::-webkit-scrollbar{display:none}
+.tabs a{flex:none;padding:8px 14px;border-radius:999px;font:600 14px Poppins;color:var(--grey);transition:background .15s,color .15s}
+.tabs a:hover,.tabs a.on{background:var(--mint);color:var(--navy)}
+section[id],div[id]{scroll-margin-top:140px}
+.bshot{display:block;margin:16px 0 4px;border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/9;background:#EEF2F8;position:relative}
+.bshot img{width:100%;height:100%;object-fit:cover;object-position:top}
+.bshot span{position:absolute;left:10px;bottom:10px;background:rgba(11,42,107,.88);color:#fff;font:600 12px Poppins;padding:5px 10px;border-radius:999px}
 </style>
 </head>
 <body>
@@ -340,7 +350,8 @@ footer.ft .cp{border-top:1px solid rgba(255,255,255,.14);margin-top:36px;padding
 >
   <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
 </svg><span>Espace de travail</span></a>
-</div></header>
+</div>
+<nav class="tabs" aria-label="Sections"><div class="wrap"><a href="#bornes">Les 9 étapes</a><a href="#exemples">Les livrables</a><a href="#disciplines">Les compétences</a><a href="#ecosysteme">L'ambition</a><a href="#pour-qui">Pour qui</a><a href="#comment">Comment</a><a href="#parcours">Le parcours</a></div></nav></header>
 
 <div class="hero">
  <div class="blob b1"></div><div class="blob b2"></div><div class="dots"></div>
@@ -552,7 +563,7 @@ footer.ft .cp{border-top:1px solid rgba(255,255,255,.14);margin-top:36px;padding
   <path d="M9 18h6" />
   <path d="M10 22h4" />
 </svg></div><div class="bnum">Étape 1</div></div>
-<h3>Valider son idée</h3><p class="pour">Pour le porteur qui veut vérifier que son idée répond à un vrai problème avant d&#x27;y passer deux ans.</p><ul class="tl"><li><b>0</b> Onboarding</li><li><b>2</b> Validation de l&#x27;idée</li><li><b>3</b> Étude des comparables</li><li><b>6</b> Mur des comparables</li></ul>
+<h3>Valider son idée</h3><p class="pour">Pour le porteur qui veut vérifier que son idée répond à un vrai problème avant d&#x27;y passer deux ans.</p><a class="bshot" href="img/liv-01.webp" target="_blank" rel="noopener"><img src="img/liv-01.webp" alt="Le quadrant des comparables" loading="lazy"><span>Livrable : Le quadrant des comparables</span></a><ul class="tl"><li><b>0</b> Onboarding</li><li><b>2</b> Validation de l&#x27;idée</li><li><b>3</b> Étude des comparables</li><li><b>6</b> Mur des comparables</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -615,7 +626,7 @@ footer.ft .cp{border-top:1px solid rgba(255,255,255,.14);margin-top:36px;padding
   <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
   <path d="M16 3.13a4 4 0 0 1 0 7.75" />
 </svg></div><div class="bnum">Étape 2</div></div>
-<h3>Construire son équipe</h3><p class="pour">Pour le fondateur seul, ou l&#x27;équipe qui ne s&#x27;est jamais mise d&#x27;accord par écrit.</p><ul class="tl"><li><b>4</b> Recherche du bon cofondateur</li><li><b>5</b> Alignement des cofondateurs</li><li><b>33</b> Composition de l&#x27;équipe</li></ul>
+<h3>Construire son équipe</h3><p class="pour">Pour le fondateur seul, ou l&#x27;équipe qui ne s&#x27;est jamais mise d&#x27;accord par écrit.</p><a class="bshot" href="img/etape-2.webp" target="_blank" rel="noopener"><img src="img/etape-2.webp" alt="Le plan d&#x27;équipe et les bios des fondateurs" loading="lazy"><span>Livrable : Le plan d&#x27;équipe et les bios des fondateurs</span></a><ul class="tl"><li><b>4</b> Recherche du bon cofondateur</li><li><b>5</b> Alignement des cofondateurs</li><li><b>33</b> Composition de l&#x27;équipe</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -675,7 +686,7 @@ footer.ft .cp{border-top:1px solid rgba(255,255,255,.14);margin-top:36px;padding
 >
   <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
 </svg></div><div class="bnum">Étape 3</div></div>
-<h3>Comprendre ses clients</h3><p class="pour">Pour la startup qui connaît son produit mieux que ses clients.</p><ul class="tl"><li><b>7</b> Découverte client</li><li><b>8</b> Entretiens écosystème</li><li><b>18</b> Parcours client</li><li><b>19</b> Proposition de valeur</li></ul>
+<h3>Comprendre ses clients</h3><p class="pour">Pour la startup qui connaît son produit mieux que ses clients.</p><a class="bshot" href="img/etape-3.webp" target="_blank" rel="noopener"><img src="img/etape-3.webp" alt="La proposition de valeur" loading="lazy"><span>Livrable : La proposition de valeur</span></a><ul class="tl"><li><b>7</b> Découverte client</li><li><b>8</b> Entretiens écosystème</li><li><b>18</b> Parcours client</li><li><b>19</b> Proposition de valeur</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -736,7 +747,7 @@ footer.ft .cp{border-top:1px solid rgba(255,255,255,.14);margin-top:36px;padding
   <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
   <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
 </svg></div><div class="bnum">Étape 4</div></div>
-<h3>Construire sa marque</h3><p class="pour">Pour la startup qui n&#x27;a pas encore de nom, ou dont l&#x27;image ne reflète pas ce qu&#x27;elle fait.</p><ul class="tl"><li><b>9</b> Nom de la startup</li><li><b>12</b> Branding de base</li><li><b>13</b> Nom de domaine et landing page</li><li><b>14</b> Branding avancé</li></ul>
+<h3>Construire sa marque</h3><p class="pour">Pour la startup qui n&#x27;a pas encore de nom, ou dont l&#x27;image ne reflète pas ce qu&#x27;elle fait.</p><a class="bshot" href="img/liv-14.webp" target="_blank" rel="noopener"><img src="img/liv-14.webp" alt="La charte graphique" loading="lazy"><span>Livrable : La charte graphique</span></a><ul class="tl"><li><b>9</b> Nom de la startup</li><li><b>12</b> Branding de base</li><li><b>13</b> Nom de domaine et landing page</li><li><b>14</b> Branding avancé</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -797,7 +808,7 @@ footer.ft .cp{border-top:1px solid rgba(255,255,255,.14);margin-top:36px;padding
   <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
   <path d="M12 18h.01" />
 </svg></div><div class="bnum">Étape 5</div></div>
-<h3>Créer son produit</h3><p class="pour">Pour la startup qui doit passer de l&#x27;idée à un produit que des clients utilisent.</p><ul class="tl"><li><b>10</b> Prototypage</li><li><b>11</b> Test du prototype</li><li><b>15</b> Architecture technique</li><li><b>16</b> Développement du MVP</li><li><b>17</b> Publication sur les stores</li><li><b>34</b> Feuille de route produit</li></ul>
+<h3>Créer son produit</h3><p class="pour">Pour la startup qui doit passer de l&#x27;idée à un produit que des clients utilisent.</p><a class="bshot" href="img/liv-06.webp" target="_blank" rel="noopener"><img src="img/liv-06.webp" alt="Les écrans du prototype" loading="lazy"><span>Livrable : Les écrans du prototype</span></a><ul class="tl"><li><b>10</b> Prototypage</li><li><b>11</b> Test du prototype</li><li><b>15</b> Architecture technique</li><li><b>16</b> Développement du MVP</li><li><b>17</b> Publication sur les stores</li><li><b>34</b> Feuille de route produit</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -858,7 +869,7 @@ footer.ft .cp{border-top:1px solid rgba(255,255,255,.14);margin-top:36px;padding
   <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
   <polyline points="16 7 22 7 22 13" />
 </svg></div><div class="bnum">Étape 6</div></div>
-<h3>Trouver son modèle</h3><p class="pour">Pour la startup qui doit chiffrer son marché et fixer ses prix.</p><ul class="tl"><li><b>20</b> Analyse concurrentielle</li><li><b>21</b> Business model et prix</li><li><b>23</b> Taille de marché</li></ul>
+<h3>Trouver son modèle</h3><p class="pour">Pour la startup qui doit chiffrer son marché et fixer ses prix.</p><a class="bshot" href="img/etape-6.webp" target="_blank" rel="noopener"><img src="img/etape-6.webp" alt="La taille de marché" loading="lazy"><span>Livrable : La taille de marché</span></a><ul class="tl"><li><b>20</b> Analyse concurrentielle</li><li><b>21</b> Business model et prix</li><li><b>23</b> Taille de marché</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -922,7 +933,7 @@ footer.ft .cp{border-top:1px solid rgba(255,255,255,.14);margin-top:36px;padding
   <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
   <path d="M3 4h8" />
 </svg></div><div class="bnum">Étape 7</div></div>
-<h3>Décrocher ses clients</h3><p class="pour">Pour la startup qui a un produit et doit maintenant vendre.</p><ul class="tl"><li><b>22</b> Pilote (POC)</li><li><b>25</b> Partenaires clés</li><li><b>26</b> Go-to-market</li><li><b>27</b> Premières ventes et encaissement</li><li><b>29</b> Mesure d&#x27;impact</li></ul>
+<h3>Décrocher ses clients</h3><p class="pour">Pour la startup qui a un produit et doit maintenant vendre.</p><a class="bshot" href="img/etape-7.webp" target="_blank" rel="noopener"><img src="img/etape-7.webp" alt="Le go-to-market des six premiers mois" loading="lazy"><span>Livrable : Le go-to-market des six premiers mois</span></a><ul class="tl"><li><b>22</b> Pilote (POC)</li><li><b>25</b> Partenaires clés</li><li><b>26</b> Go-to-market</li><li><b>27</b> Premières ventes et encaissement</li><li><b>29</b> Mesure d&#x27;impact</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -983,7 +994,7 @@ footer.ft .cp{border-top:1px solid rgba(255,255,255,.14);margin-top:36px;padding
   <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
   <path d="m9 12 2 2 4-4" />
 </svg></div><div class="bnum">Étape 8</div></div>
-<h3>Structurer son entreprise</h3><p class="pour">Pour la startup qui doit se structurer avant de grandir ou de lever.</p><ul class="tl"><li><b>30</b> Projections top-line</li><li><b>31</b> Création de la société</li><li><b>32</b> Socle juridique</li><li><b>35</b> Projections financières</li></ul>
+<h3>Structurer son entreprise</h3><p class="pour">Pour la startup qui doit se structurer avant de grandir ou de lever.</p><a class="bshot" href="img/etape-8.webp" target="_blank" rel="noopener"><img src="img/etape-8.webp" alt="Le dossier d&#x27;incorporation" loading="lazy"><span>Livrable : Le dossier d&#x27;incorporation</span></a><ul class="tl"><li><b>30</b> Projections top-line</li><li><b>31</b> Création de la société</li><li><b>32</b> Socle juridique</li><li><b>35</b> Projections financières</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -1046,7 +1057,7 @@ footer.ft .cp{border-top:1px solid rgba(255,255,255,.14);margin-top:36px;padding
   <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
   <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
 </svg></div><div class="bnum">Étape 9</div></div>
-<h3>Lever des fonds</h3><p class="pour">Pour la startup qui se prépare à rencontrer des investisseurs.</p><ul class="tl"><li><b>24</b> Cartographie du financement</li><li><b>36</b> Pitch deck</li><li><b>37</b> Stratégie de sortie</li><li><b>38</b> Data room</li><li><b>39</b> Pitch devant le comité d&#x27;investissement</li><li><b>40</b> Bilan de fin de parcours</li></ul>
+<h3>Lever des fonds</h3><p class="pour">Pour la startup qui se prépare à rencontrer des investisseurs.</p><a class="bshot" href="img/etape-9.webp" target="_blank" rel="noopener"><img src="img/etape-9.webp" alt="Le pitch deck investisseur" loading="lazy"><span>Livrable : Le pitch deck investisseur</span></a><ul class="tl"><li><b>24</b> Cartographie du financement</li><li><b>36</b> Pitch deck</li><li><b>37</b> Stratégie de sortie</li><li><b>38</b> Data room</li><li><b>39</b> Pitch devant le comité d&#x27;investissement</li><li><b>40</b> Bilan de fin de parcours</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -3172,6 +3183,9 @@ document.querySelectorAll('dialog').forEach(d=>{
 });
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
 document.querySelectorAll('.rv').forEach(x=>io.observe(x));
+const tabs=[...document.querySelectorAll('.tabs a')];
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){tabs.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-45% 0px -50% 0px'});
+tabs.forEach(a=>{const t=document.querySelector(a.getAttribute('href'));if(t)so.observe(t)});
 const fl=document.querySelector('.float');
 addEventListener('scroll',()=>fl.classList.toggle('on',scrollY>700),{passive:true});
 </script>
