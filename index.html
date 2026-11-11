@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Clinique Startup</title>
-<meta name="description" content="1 000 projets de startup en 3 ans. Dix bornes, 41 tâches et des agents IA qui travaillent sur ton vrai projet. Ivoire Tech Forum 2026.">
+<meta name="description" content="1 000 projets de startup en 3 ans en Côte d'Ivoire. Un diagnostic, 9 bornes et 39 tâches, avec des contenus propulsés par l'IA au service des entrepreneurs ivoiriens.">
 <meta property="og:title" content="Clinique Startup, Ivoire Tech Forum 2026">
 <meta property="og:description" content="1 000 projets de startup en 3 ans : former, outiller et accompagner avec l'IA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,13 +56,19 @@ img{max-width:100%;display:block}
 .qrcard a{color:var(--blue);font-weight:600}
 
 .stats{position:relative;margin-top:-64px;z-index:3}
-.stats .in{background:#fff;border-radius:24px;box-shadow:0 20px 50px rgba(11,42,107,.12);display:grid;grid-template-columns:repeat(4,1fr)}
-.stat{padding:26px 24px;border-right:1px solid var(--line)}
+.stats .in{background:#fff;border-radius:24px;box-shadow:0 20px 50px rgba(11,42,107,.12);display:grid;grid-template-columns:repeat(3,1fr)}
+.stat{padding:24px;border-right:1px solid var(--line);display:flex;gap:16px;align-items:center}
 .stat:last-child{border-right:0}
-.stat b{display:block;font:800 40px/1.05 Poppins;color:var(--navy)}
-.stat b em{font-style:normal;color:var(--green)}
+.stat i{width:60px;height:60px;border-radius:18px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 14%,#fff);color:var(--c);flex:none}
+.stat i .ic{width:30px;height:30px}
+.stat b{display:block;font:800 36px/1.05 Poppins;color:var(--c)}
 .stat span{font-size:14.5px;color:var(--grey)}
-
+.livr{margin-top:18px;background:linear-gradient(100deg,#F68B1F 0%,#F68B1F 6px,var(--mint) 6px);border-radius:20px;padding:20px 24px;display:flex;gap:16px;align-items:center;color:#0D5F2C}
+.livr>.ic{width:34px;height:34px;color:var(--green)}
+.livr b{display:block;font:700 18px Poppins;color:var(--navy)}
+.livr span{font-size:15px;color:#2F5F45}
+.flag{display:inline-block;width:18px;height:12px;border-radius:2px;background:linear-gradient(90deg,#F77F00 33%,#fff 33% 66%,#009E60 66%);flex:none}
+.top:after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:4px;background:linear-gradient(90deg,#F77F00 33.3%,#fff 33.3% 66.6%,#009E60 66.6%)}
 section{padding:96px 0 0}
 .sh{max-width:760px;margin-bottom:36px}
 .sh small{color:var(--green);font-weight:700;letter-spacing:3px;font-size:13px;text-transform:uppercase}
@@ -79,7 +85,39 @@ section{padding:96px 0 0}
 .partners .ic{color:var(--lime)}
 .loi{margin-top:20px;background:var(--lime);color:var(--navy);border-radius:16px;padding:16px 18px;font-weight:600;display:flex;gap:12px;align-items:center;position:relative;z-index:1}
 
-.cibles{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+
+.hub{position:relative;display:grid;grid-template-columns:1fr 1.15fr 1fr;grid-template-rows:auto auto auto;gap:22px 36px;align-items:center;justify-items:center;padding:20px 0}
+.hub .lines{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.hub .lines line{stroke:var(--green);stroke-width:2.5;stroke-dasharray:6 7;vector-effect:non-scaling-stroke;animation:flow 1.2s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-26}}
+.node{position:relative;z-index:1;width:100%;max-width:250px;height:132px;background:#fff;border:1px solid var(--line);border-radius:22px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:4px;box-shadow:0 10px 28px rgba(11,42,107,.08)}
+.node .ic{color:var(--blue);width:30px;height:30px;margin-bottom:4px}
+.node b{font:700 17px Poppins;color:var(--navy)}
+.node span{font-size:13.5px;color:var(--grey)}
+.n1{grid-column:1;grid-row:1}.n2{grid-column:3;grid-row:1}.n3{grid-column:1;grid-row:3}.n4{grid-column:3;grid-row:3}
+.core{grid-column:2;grid-row:2;position:relative;z-index:1;width:270px;height:270px;border-radius:50%;background:radial-gradient(circle at 30% 25%,#1C55C7,var(--navy) 70%);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px;box-shadow:0 0 0 12px rgba(183,226,52,.25),0 0 0 26px rgba(34,180,85,.12),0 25px 60px rgba(11,42,107,.35)}
+.core i{width:64px;height:64px;border-radius:20px;background:var(--lime);color:var(--navy);display:grid;place-items:center;margin-bottom:12px}
+.core i .ic{width:34px;height:34px}
+.core b{font:700 18px/1.25 Poppins}
+.core span{font-size:13.5px;color:#C9D6EE;margin-top:6px}
+.out{margin:26px auto 0;max-width:680px;background:linear-gradient(90deg,var(--green),#14A06B);color:#fff;border-radius:20px;padding:18px 24px;display:flex;gap:16px;align-items:center}
+.out>span .ic{width:30px;height:30px;transform:rotate(90deg)}
+.out b{display:block;font:700 18px Poppins}
+.out em{font-style:normal;color:#E9FBD0;font-weight:600}
+.cadre{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;margin-top:26px}
+.loi2,.pil{border-radius:24px;padding:28px;display:flex;gap:18px;align-items:flex-start}
+.loi2{background:var(--lime);color:var(--navy)}
+.pil{background:var(--navy);color:#fff}
+.loi2 i,.pil i{width:62px;height:62px;border-radius:18px;display:grid;place-items:center;flex:none}
+.loi2 i{background:var(--navy);color:var(--lime)}.pil i{background:rgba(255,255,255,.12);color:var(--lime)}
+.loi2 i .ic,.pil i .ic{width:32px;height:32px}
+.loi2 small,.pil small{font:800 13px Poppins;letter-spacing:2px;text-transform:uppercase;opacity:.75}
+.loi2 b,.pil b{display:block;font:700 23px/1.2 Poppins;margin:4px 0 8px}
+.loi2 p{font-size:15.5px;color:#22340B}.pil p{font-size:15.5px;color:#C9D6EE}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.badges span{display:inline-flex;align-items:center;gap:7px;background:rgba(183,226,52,.16);border:1px solid rgba(183,226,52,.45);color:var(--lime);font:600 13px Inter;padding:6px 12px;border-radius:99px}
+.badges .ic{width:16px;height:16px}
+.cibles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .cible{background:#fff;border-radius:22px;padding:26px;border:1px solid var(--line)}
 .cible .i{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;background:var(--mint);color:var(--green);margin-bottom:16px}
 .cible h3{font-size:20px;margin-bottom:6px}
@@ -198,8 +236,19 @@ footer img{height:40px;width:auto}
 .rv{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
 .rv.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}dialog[open]{animation:none}}
-@media (max-width:1000px){.hgrid{grid-template-columns:1fr}.qrcard{max-width:360px}.stats .in{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.eco,.how{grid-template-columns:1fr}.cibles,.parcours,.disc{grid-template-columns:repeat(2,1fr)}.bornes,.galerie{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:620px){.wrap{padding:0 16px}.brand img{height:26px}.brand b{font-size:15px}.brand{gap:10px}.top .btn span{display:none}.hero{padding:40px 0 100px}.cibles,.parcours,.bornes,.galerie,.disc{grid-template-columns:1fr}.ctas .btn{width:100%}.diag{grid-template-columns:1fr;padding:26px 22px 26px 28px}.diag .qr2 svg{width:100%;height:auto;max-width:240px;margin:0 auto}.eco{padding:26px}.partners{grid-template-columns:1fr}.stat{padding:20px 18px}.stat b{font-size:30px}.final{padding:40px 20px}.dh{padding:24px 66px 22px 20px}.db{padding:18px 14px 34px}}
+@media (max-width:1000px){.cadre{grid-template-columns:1fr}.hub{grid-template-columns:1fr 1fr;gap:14px}.hub .lines{display:none}.core{grid-column:1/-1;grid-row:1;width:240px;height:240px;margin-bottom:10px}.n1{grid-column:1;grid-row:2}.n2{grid-column:2;grid-row:2}.n3{grid-column:1;grid-row:3}.n4{grid-column:2;grid-row:3}.node{height:120px}.hgrid{grid-template-columns:1fr}.qrcard{max-width:360px}.stats .in{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line)}.eco,.how{grid-template-columns:1fr}.cibles,.parcours,.disc{grid-template-columns:repeat(2,1fr)}.bornes,.galerie{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.node{height:auto;padding:16px 10px}.node b{font-size:15px}.loi2,.pil{padding:22px;flex-direction:column}.out{flex-direction:column;text-align:center}.wrap{padding:0 16px}.brand img{height:26px}.brand b{font-size:15px}.brand{gap:10px}.top .btn span{display:none}.hero{padding:40px 0 100px}.cibles,.parcours,.bornes,.galerie,.disc{grid-template-columns:1fr}.ctas .btn{width:100%}.diag{grid-template-columns:1fr;padding:26px 22px 26px 28px}.diag .qr2 svg{width:100%;height:auto;max-width:240px;margin:0 auto}.eco{padding:26px}.partners{grid-template-columns:1fr}.stat{padding:18px}.stat b{font-size:30px}.final{padding:40px 20px}.dh{padding:24px 66px 22px 20px}.db{padding:18px 14px 34px}}
+
+.tight{padding-top:56px!important;padding-bottom:10px!important}
+.marq{overflow:hidden;padding:8px 0;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marq .trk{display:flex;gap:14px;width:max-content;animation:defile 38s linear infinite}
+.marq.rev .trk{animation-direction:reverse;animation-duration:44s}
+.marq:hover .trk{animation-play-state:paused}
+@keyframes defile{to{transform:translateX(-50%)}}
+.m{display:inline-flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:99px;padding:12px 22px 12px 12px;font:700 18px Poppins;color:var(--navy);white-space:nowrap;box-shadow:0 6px 18px rgba(11,42,107,.06)}
+.m i{width:40px;height:40px;border-radius:50%;background:var(--c);color:#fff;display:grid;place-items:center}
+.m .ic{width:20px;height:20px}
+@media (prefers-reduced-motion:reduce){.marq .trk{animation:none;flex-wrap:wrap;width:auto;justify-content:center}.marq.rev{display:none}}
 </style>
 </head>
 <body>
@@ -218,36 +267,18 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
-</svg><span>Espace Telegram</span></a>
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+</svg><span>Espace d'échange</span></a>
 </div></header>
 
 <div class="hero">
  <div class="blob b1"></div><div class="blob b2"></div><div class="dots"></div>
  <div class="wrap hgrid">
   <div>
-   <span class="pill"><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
-  <path d="M20 3v4" />
-  <path d="M22 5h-4" />
-  <path d="M4 17v2" />
-  <path d="M5 18H3" />
-</svg> Former, outiller, accompagner avec l'IA</span>
+   <span class="pill"><i class="flag"></i> Côte d'Ivoire · Former, outiller, accompagner avec l'IA</span>
    <h1 class="big"><span class="k">1 000</span><span class="t">projets<br>de startup</span></h1>
    <span class="ans">en 3 ans</span>
-   <p class="lead">La Clinique Startup met des <b>agents IA</b> au service des entrepreneurs : <b>10 bornes</b> et <b>41 tâches</b> pour avancer sur ton vrai projet, de l'idée à la levée de fonds, et <b>repartir avec un livrable</b> prêt à servir.</p>
+   <p class="lead">La Clinique Startup met des <b>contenus et des outils propulsés par l'IA</b> au service des <b>entrepreneurs ivoiriens</b> : un diagnostic, <b>9 bornes</b> et <b>39 tâches</b> pour avancer sur ton vrai projet, de l'idée à la levée de fonds, et repartir avec des <b>livrables concrets et actionnables</b>.</p>
    <div class="ctas">
     <a class="btn tg" href="https://t.me/+p8CjOk8q7yBmZmRk" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"
  
@@ -261,9 +292,8 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
-</svg> Rejoindre l'espace Telegram</a>
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+</svg> Rejoindre l'espace d'échange</a>
     <a class="btn ghost" href="#bornes"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -280,25 +310,9 @@ footer img{height:40px;width:auto}
   <rect width="7" height="7" x="14" y="3" rx="1" />
   <rect width="7" height="7" x="14" y="14" rx="1" />
   <rect width="7" height="7" x="3" y="14" rx="1" />
-</svg> Voir les 10 bornes</a>
+</svg> Voir les bornes</a>
    </div>
-  </div>
-  <div class="qrcard"><small>Étape 1</small><h3>Scanne et fais ton diagnostic</h3><svg class="qr" viewBox="-1 -1 27 27" shape-rendering="crispEdges" role="img" aria-label="QR code du diagnostic"><g fill="#0B2A6B"><rect x="0" y="0" width="1.03" height="1.03"/><rect x="1" y="0" width="1.03" height="1.03"/><rect x="2" y="0" width="1.03" height="1.03"/><rect x="3" y="0" width="1.03" height="1.03"/><rect x="4" y="0" width="1.03" height="1.03"/><rect x="5" y="0" width="1.03" height="1.03"/><rect x="6" y="0" width="1.03" height="1.03"/><rect x="8" y="0" width="1.03" height="1.03"/><rect x="13" y="0" width="1.03" height="1.03"/><rect x="18" y="0" width="1.03" height="1.03"/><rect x="19" y="0" width="1.03" height="1.03"/><rect x="20" y="0" width="1.03" height="1.03"/><rect x="21" y="0" width="1.03" height="1.03"/><rect x="22" y="0" width="1.03" height="1.03"/><rect x="23" y="0" width="1.03" height="1.03"/><rect x="24" y="0" width="1.03" height="1.03"/><rect x="0" y="1" width="1.03" height="1.03"/><rect x="6" y="1" width="1.03" height="1.03"/><rect x="10" y="1" width="1.03" height="1.03"/><rect x="13" y="1" width="1.03" height="1.03"/><rect x="16" y="1" width="1.03" height="1.03"/><rect x="18" y="1" width="1.03" height="1.03"/><rect x="24" y="1" width="1.03" height="1.03"/><rect x="0" y="2" width="1.03" height="1.03"/><rect x="2" y="2" width="1.03" height="1.03"/><rect x="3" y="2" width="1.03" height="1.03"/><rect x="4" y="2" width="1.03" height="1.03"/><rect x="6" y="2" width="1.03" height="1.03"/><rect x="8" y="2" width="1.03" height="1.03"/><rect x="10" y="2" width="1.03" height="1.03"/><rect x="12" y="2" width="1.03" height="1.03"/><rect x="13" y="2" width="1.03" height="1.03"/><rect x="14" y="2" width="1.03" height="1.03"/><rect x="18" y="2" width="1.03" height="1.03"/><rect x="20" y="2" width="1.03" height="1.03"/><rect x="21" y="2" width="1.03" height="1.03"/><rect x="22" y="2" width="1.03" height="1.03"/><rect x="24" y="2" width="1.03" height="1.03"/><rect x="0" y="3" width="1.03" height="1.03"/><rect x="2" y="3" width="1.03" height="1.03"/><rect x="3" y="3" width="1.03" height="1.03"/><rect x="4" y="3" width="1.03" height="1.03"/><rect x="6" y="3" width="1.03" height="1.03"/><rect x="10" y="3" width="1.03" height="1.03"/><rect x="11" y="3" width="1.03" height="1.03"/><rect x="13" y="3" width="1.03" height="1.03"/><rect x="15" y="3" width="1.03" height="1.03"/><rect x="18" y="3" width="1.03" height="1.03"/><rect x="20" y="3" width="1.03" height="1.03"/><rect x="21" y="3" width="1.03" height="1.03"/><rect x="22" y="3" width="1.03" height="1.03"/><rect x="24" y="3" width="1.03" height="1.03"/><rect x="0" y="4" width="1.03" height="1.03"/><rect x="2" y="4" width="1.03" height="1.03"/><rect x="3" y="4" width="1.03" height="1.03"/><rect x="4" y="4" width="1.03" height="1.03"/><rect x="6" y="4" width="1.03" height="1.03"/><rect x="9" y="4" width="1.03" height="1.03"/><rect x="11" y="4" width="1.03" height="1.03"/><rect x="14" y="4" width="1.03" height="1.03"/><rect x="16" y="4" width="1.03" height="1.03"/><rect x="18" y="4" width="1.03" height="1.03"/><rect x="20" y="4" width="1.03" height="1.03"/><rect x="21" y="4" width="1.03" height="1.03"/><rect x="22" y="4" width="1.03" height="1.03"/><rect x="24" y="4" width="1.03" height="1.03"/><rect x="0" y="5" width="1.03" height="1.03"/><rect x="6" y="5" width="1.03" height="1.03"/><rect x="8" y="5" width="1.03" height="1.03"/><rect x="9" y="5" width="1.03" height="1.03"/><rect x="10" y="5" width="1.03" height="1.03"/><rect x="12" y="5" width="1.03" height="1.03"/><rect x="13" y="5" width="1.03" height="1.03"/><rect x="14" y="5" width="1.03" height="1.03"/><rect x="16" y="5" width="1.03" height="1.03"/><rect x="18" y="5" width="1.03" height="1.03"/><rect x="24" y="5" width="1.03" height="1.03"/><rect x="0" y="6" width="1.03" height="1.03"/><rect x="1" y="6" width="1.03" height="1.03"/><rect x="2" y="6" width="1.03" height="1.03"/><rect x="3" y="6" width="1.03" height="1.03"/><rect x="4" y="6" width="1.03" height="1.03"/><rect x="5" y="6" width="1.03" height="1.03"/><rect x="6" y="6" width="1.03" height="1.03"/><rect x="8" y="6" width="1.03" height="1.03"/><rect x="10" y="6" width="1.03" height="1.03"/><rect x="12" y="6" width="1.03" height="1.03"/><rect x="14" y="6" width="1.03" height="1.03"/><rect x="16" y="6" width="1.03" height="1.03"/><rect x="18" y="6" width="1.03" height="1.03"/><rect x="19" y="6" width="1.03" height="1.03"/><rect x="20" y="6" width="1.03" height="1.03"/><rect x="21" y="6" width="1.03" height="1.03"/><rect x="22" y="6" width="1.03" height="1.03"/><rect x="23" y="6" width="1.03" height="1.03"/><rect x="24" y="6" width="1.03" height="1.03"/><rect x="9" y="7" width="1.03" height="1.03"/><rect x="11" y="7" width="1.03" height="1.03"/><rect x="12" y="7" width="1.03" height="1.03"/><rect x="14" y="7" width="1.03" height="1.03"/><rect x="15" y="7" width="1.03" height="1.03"/><rect x="16" y="7" width="1.03" height="1.03"/><rect x="0" y="8" width="1.03" height="1.03"/><rect x="2" y="8" width="1.03" height="1.03"/><rect x="6" y="8" width="1.03" height="1.03"/><rect x="7" y="8" width="1.03" height="1.03"/><rect x="9" y="8" width="1.03" height="1.03"/><rect x="10" y="8" width="1.03" height="1.03"/><rect x="12" y="8" width="1.03" height="1.03"/><rect x="16" y="8" width="1.03" height="1.03"/><rect x="19" y="8" width="1.03" height="1.03"/><rect x="22" y="8" width="1.03" height="1.03"/><rect x="24" y="8" width="1.03" height="1.03"/><rect x="1" y="9" width="1.03" height="1.03"/><rect x="2" y="9" width="1.03" height="1.03"/><rect x="7" y="9" width="1.03" height="1.03"/><rect x="10" y="9" width="1.03" height="1.03"/><rect x="11" y="9" width="1.03" height="1.03"/><rect x="13" y="9" width="1.03" height="1.03"/><rect x="15" y="9" width="1.03" height="1.03"/><rect x="16" y="9" width="1.03" height="1.03"/><rect x="18" y="9" width="1.03" height="1.03"/><rect x="19" y="9" width="1.03" height="1.03"/><rect x="21" y="9" width="1.03" height="1.03"/><rect x="23" y="9" width="1.03" height="1.03"/><rect x="24" y="9" width="1.03" height="1.03"/><rect x="0" y="10" width="1.03" height="1.03"/><rect x="3" y="10" width="1.03" height="1.03"/><rect x="4" y="10" width="1.03" height="1.03"/><rect x="6" y="10" width="1.03" height="1.03"/><rect x="7" y="10" width="1.03" height="1.03"/><rect x="8" y="10" width="1.03" height="1.03"/><rect x="11" y="10" width="1.03" height="1.03"/><rect x="14" y="10" width="1.03" height="1.03"/><rect x="15" y="10" width="1.03" height="1.03"/><rect x="17" y="10" width="1.03" height="1.03"/><rect x="18" y="10" width="1.03" height="1.03"/><rect x="19" y="10" width="1.03" height="1.03"/><rect x="20" y="10" width="1.03" height="1.03"/><rect x="21" y="10" width="1.03" height="1.03"/><rect x="22" y="10" width="1.03" height="1.03"/><rect x="24" y="10" width="1.03" height="1.03"/><rect x="5" y="11" width="1.03" height="1.03"/><rect x="7" y="11" width="1.03" height="1.03"/><rect x="8" y="11" width="1.03" height="1.03"/><rect x="11" y="11" width="1.03" height="1.03"/><rect x="14" y="11" width="1.03" height="1.03"/><rect x="15" y="11" width="1.03" height="1.03"/><rect x="17" y="11" width="1.03" height="1.03"/><rect x="19" y="11" width="1.03" height="1.03"/><rect x="21" y="11" width="1.03" height="1.03"/><rect x="0" y="12" width="1.03" height="1.03"/><rect x="2" y="12" width="1.03" height="1.03"/><rect x="5" y="12" width="1.03" height="1.03"/><rect x="6" y="12" width="1.03" height="1.03"/><rect x="12" y="12" width="1.03" height="1.03"/><rect x="15" y="12" width="1.03" height="1.03"/><rect x="18" y="12" width="1.03" height="1.03"/><rect x="24" y="12" width="1.03" height="1.03"/><rect x="1" y="13" width="1.03" height="1.03"/><rect x="2" y="13" width="1.03" height="1.03"/><rect x="3" y="13" width="1.03" height="1.03"/><rect x="5" y="13" width="1.03" height="1.03"/><rect x="7" y="13" width="1.03" height="1.03"/><rect x="9" y="13" width="1.03" height="1.03"/><rect x="10" y="13" width="1.03" height="1.03"/><rect x="12" y="13" width="1.03" height="1.03"/><rect x="15" y="13" width="1.03" height="1.03"/><rect x="16" y="13" width="1.03" height="1.03"/><rect x="18" y="13" width="1.03" height="1.03"/><rect x="19" y="13" width="1.03" height="1.03"/><rect x="23" y="13" width="1.03" height="1.03"/><rect x="24" y="13" width="1.03" height="1.03"/><rect x="0" y="14" width="1.03" height="1.03"/><rect x="1" y="14" width="1.03" height="1.03"/><rect x="4" y="14" width="1.03" height="1.03"/><rect x="5" y="14" width="1.03" height="1.03"/><rect x="6" y="14" width="1.03" height="1.03"/><rect x="8" y="14" width="1.03" height="1.03"/><rect x="9" y="14" width="1.03" height="1.03"/><rect x="12" y="14" width="1.03" height="1.03"/><rect x="14" y="14" width="1.03" height="1.03"/><rect x="15" y="14" width="1.03" height="1.03"/><rect x="16" y="14" width="1.03" height="1.03"/><rect x="21" y="14" width="1.03" height="1.03"/><rect x="22" y="14" width="1.03" height="1.03"/><rect x="24" y="14" width="1.03" height="1.03"/><rect x="2" y="15" width="1.03" height="1.03"/><rect x="3" y="15" width="1.03" height="1.03"/><rect x="4" y="15" width="1.03" height="1.03"/><rect x="7" y="15" width="1.03" height="1.03"/><rect x="9" y="15" width="1.03" height="1.03"/><rect x="11" y="15" width="1.03" height="1.03"/><rect x="12" y="15" width="1.03" height="1.03"/><rect x="15" y="15" width="1.03" height="1.03"/><rect x="16" y="15" width="1.03" height="1.03"/><rect x="19" y="15" width="1.03" height="1.03"/><rect x="20" y="15" width="1.03" height="1.03"/><rect x="21" y="15" width="1.03" height="1.03"/><rect x="0" y="16" width="1.03" height="1.03"/><rect x="1" y="16" width="1.03" height="1.03"/><rect x="2" y="16" width="1.03" height="1.03"/><rect x="4" y="16" width="1.03" height="1.03"/><rect x="6" y="16" width="1.03" height="1.03"/><rect x="9" y="16" width="1.03" height="1.03"/><rect x="12" y="16" width="1.03" height="1.03"/><rect x="14" y="16" width="1.03" height="1.03"/><rect x="16" y="16" width="1.03" height="1.03"/><rect x="17" y="16" width="1.03" height="1.03"/><rect x="18" y="16" width="1.03" height="1.03"/><rect x="19" y="16" width="1.03" height="1.03"/><rect x="20" y="16" width="1.03" height="1.03"/><rect x="23" y="16" width="1.03" height="1.03"/><rect x="8" y="17" width="1.03" height="1.03"/><rect x="9" y="17" width="1.03" height="1.03"/><rect x="13" y="17" width="1.03" height="1.03"/><rect x="14" y="17" width="1.03" height="1.03"/><rect x="16" y="17" width="1.03" height="1.03"/><rect x="20" y="17" width="1.03" height="1.03"/><rect x="24" y="17" width="1.03" height="1.03"/><rect x="0" y="18" width="1.03" height="1.03"/><rect x="1" y="18" width="1.03" height="1.03"/><rect x="2" y="18" width="1.03" height="1.03"/><rect x="3" y="18" width="1.03" height="1.03"/><rect x="4" y="18" width="1.03" height="1.03"/><rect x="5" y="18" width="1.03" height="1.03"/><rect x="6" y="18" width="1.03" height="1.03"/><rect x="8" y="18" width="1.03" height="1.03"/><rect x="9" y="18" width="1.03" height="1.03"/><rect x="10" y="18" width="1.03" height="1.03"/><rect x="11" y="18" width="1.03" height="1.03"/><rect x="12" y="18" width="1.03" height="1.03"/><rect x="13" y="18" width="1.03" height="1.03"/><rect x="14" y="18" width="1.03" height="1.03"/><rect x="16" y="18" width="1.03" height="1.03"/><rect x="18" y="18" width="1.03" height="1.03"/><rect x="20" y="18" width="1.03" height="1.03"/><rect x="24" y="18" width="1.03" height="1.03"/><rect x="0" y="19" width="1.03" height="1.03"/><rect x="6" y="19" width="1.03" height="1.03"/><rect x="9" y="19" width="1.03" height="1.03"/><rect x="10" y="19" width="1.03" height="1.03"/><rect x="12" y="19" width="1.03" height="1.03"/><rect x="14" y="19" width="1.03" height="1.03"/><rect x="16" y="19" width="1.03" height="1.03"/><rect x="20" y="19" width="1.03" height="1.03"/><rect x="23" y="19" width="1.03" height="1.03"/><rect x="0" y="20" width="1.03" height="1.03"/><rect x="2" y="20" width="1.03" height="1.03"/><rect x="3" y="20" width="1.03" height="1.03"/><rect x="4" y="20" width="1.03" height="1.03"/><rect x="6" y="20" width="1.03" height="1.03"/><rect x="9" y="20" width="1.03" height="1.03"/><rect x="11" y="20" width="1.03" height="1.03"/><rect x="12" y="20" width="1.03" height="1.03"/><rect x="13" y="20" width="1.03" height="1.03"/><rect x="15" y="20" width="1.03" height="1.03"/><rect x="16" y="20" width="1.03" height="1.03"/><rect x="17" y="20" width="1.03" height="1.03"/><rect x="18" y="20" width="1.03" height="1.03"/><rect x="19" y="20" width="1.03" height="1.03"/><rect x="20" y="20" width="1.03" height="1.03"/><rect x="23" y="20" width="1.03" height="1.03"/><rect x="0" y="21" width="1.03" height="1.03"/><rect x="2" y="21" width="1.03" height="1.03"/><rect x="3" y="21" width="1.03" height="1.03"/><rect x="4" y="21" width="1.03" height="1.03"/><rect x="6" y="21" width="1.03" height="1.03"/><rect x="10" y="21" width="1.03" height="1.03"/><rect x="11" y="21" width="1.03" height="1.03"/><rect x="12" y="21" width="1.03" height="1.03"/><rect x="13" y="21" width="1.03" height="1.03"/><rect x="15" y="21" width="1.03" height="1.03"/><rect x="17" y="21" width="1.03" height="1.03"/><rect x="20" y="21" width="1.03" height="1.03"/><rect x="22" y="21" width="1.03" height="1.03"/><rect x="23" y="21" width="1.03" height="1.03"/><rect x="0" y="22" width="1.03" height="1.03"/><rect x="2" y="22" width="1.03" height="1.03"/><rect x="3" y="22" width="1.03" height="1.03"/><rect x="4" y="22" width="1.03" height="1.03"/><rect x="6" y="22" width="1.03" height="1.03"/><rect x="8" y="22" width="1.03" height="1.03"/><rect x="9" y="22" width="1.03" height="1.03"/><rect x="11" y="22" width="1.03" height="1.03"/><rect x="14" y="22" width="1.03" height="1.03"/><rect x="15" y="22" width="1.03" height="1.03"/><rect x="17" y="22" width="1.03" height="1.03"/><rect x="19" y="22" width="1.03" height="1.03"/><rect x="20" y="22" width="1.03" height="1.03"/><rect x="21" y="22" width="1.03" height="1.03"/><rect x="23" y="22" width="1.03" height="1.03"/><rect x="24" y="22" width="1.03" height="1.03"/><rect x="0" y="23" width="1.03" height="1.03"/><rect x="6" y="23" width="1.03" height="1.03"/><rect x="9" y="23" width="1.03" height="1.03"/><rect x="10" y="23" width="1.03" height="1.03"/><rect x="14" y="23" width="1.03" height="1.03"/><rect x="15" y="23" width="1.03" height="1.03"/><rect x="16" y="23" width="1.03" height="1.03"/><rect x="17" y="23" width="1.03" height="1.03"/><rect x="18" y="23" width="1.03" height="1.03"/><rect x="19" y="23" width="1.03" height="1.03"/><rect x="20" y="23" width="1.03" height="1.03"/><rect x="0" y="24" width="1.03" height="1.03"/><rect x="1" y="24" width="1.03" height="1.03"/><rect x="2" y="24" width="1.03" height="1.03"/><rect x="3" y="24" width="1.03" height="1.03"/><rect x="4" y="24" width="1.03" height="1.03"/><rect x="5" y="24" width="1.03" height="1.03"/><rect x="6" y="24" width="1.03" height="1.03"/><rect x="8" y="24" width="1.03" height="1.03"/><rect x="9" y="24" width="1.03" height="1.03"/><rect x="11" y="24" width="1.03" height="1.03"/><rect x="14" y="24" width="1.03" height="1.03"/><rect x="16" y="24" width="1.03" height="1.03"/><rect x="17" y="24" width="1.03" height="1.03"/><rect x="18" y="24" width="1.03" height="1.03"/><rect x="21" y="24" width="1.03" height="1.03"/><rect x="24" y="24" width="1.03" height="1.03"/></g></svg><p>Ou ouvre <a href="https://tally.so/r/kb9K1d" target="_blank" rel="noopener">tally.so/r/kb9K1d</a></p></div>
- </div>
-</div>
-
-<div class="wrap stats"><div class="in">
- <div class="stat"><b>1 000</b><span>projets de startup visés en 3 ans</span></div>
- <div class="stat"><b>10</b><span>bornes, du diagnostic à la levée de fonds</span></div>
- <div class="stat"><b>41</b><span>tâches pour construire sa startup</span></div>
- <div class="stat"><b><em>41</em> livrables</b><span>un livrable concret à chaque tâche</span></div>
-</div></div>
-
-<section><div class="wrap">
- <div class="eco rv">
-  <div><h2>Accompagner <span>en masse</span>, avec tout l'écosystème</h2>
-   <p>La Clinique Startup se déploie avec les universités, les incubateurs, les accélérateurs et les acteurs de l'écosystème entrepreneurial. Chaque porteur de projet, où qu'il soit, accède à la même méthode et aux mêmes outils.</p>
-   <div class="loi"><svg class="ic" aria-hidden="true"
+   <div class="badges"><span><svg class="ic s" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -316,9 +330,664 @@ footer img{height:40px;width:auto}
   <line x1="14" x2="14" y1="18" y2="11" />
   <line x1="18" x2="18" y1="18" y2="11" />
   <polygon points="12 2 20 7 4 7" />
-</svg><span>Une mise en œuvre concrète de la loi Startup : accompagner les entrepreneurs à grande échelle.</span></div></div>
-  <div class="partners">
-   <div><svg class="ic" aria-hidden="true"
+</svg> Mise en œuvre de la loi Startup</span><span><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+  <line x1="4" x2="4" y1="22" y2="15" />
+</svg> Pilier 3 du Ministère</span></div>
+  </div>
+  <div class="qrcard"><small>Étape 1</small><h3>Scanne et fais ton diagnostic</h3><svg class="qr" viewBox="-1 -1 27 27" shape-rendering="crispEdges" role="img" aria-label="QR code du diagnostic"><g fill="#0B2A6B"><rect x="0" y="0" width="1.03" height="1.03"/><rect x="1" y="0" width="1.03" height="1.03"/><rect x="2" y="0" width="1.03" height="1.03"/><rect x="3" y="0" width="1.03" height="1.03"/><rect x="4" y="0" width="1.03" height="1.03"/><rect x="5" y="0" width="1.03" height="1.03"/><rect x="6" y="0" width="1.03" height="1.03"/><rect x="8" y="0" width="1.03" height="1.03"/><rect x="13" y="0" width="1.03" height="1.03"/><rect x="18" y="0" width="1.03" height="1.03"/><rect x="19" y="0" width="1.03" height="1.03"/><rect x="20" y="0" width="1.03" height="1.03"/><rect x="21" y="0" width="1.03" height="1.03"/><rect x="22" y="0" width="1.03" height="1.03"/><rect x="23" y="0" width="1.03" height="1.03"/><rect x="24" y="0" width="1.03" height="1.03"/><rect x="0" y="1" width="1.03" height="1.03"/><rect x="6" y="1" width="1.03" height="1.03"/><rect x="10" y="1" width="1.03" height="1.03"/><rect x="13" y="1" width="1.03" height="1.03"/><rect x="16" y="1" width="1.03" height="1.03"/><rect x="18" y="1" width="1.03" height="1.03"/><rect x="24" y="1" width="1.03" height="1.03"/><rect x="0" y="2" width="1.03" height="1.03"/><rect x="2" y="2" width="1.03" height="1.03"/><rect x="3" y="2" width="1.03" height="1.03"/><rect x="4" y="2" width="1.03" height="1.03"/><rect x="6" y="2" width="1.03" height="1.03"/><rect x="8" y="2" width="1.03" height="1.03"/><rect x="10" y="2" width="1.03" height="1.03"/><rect x="12" y="2" width="1.03" height="1.03"/><rect x="13" y="2" width="1.03" height="1.03"/><rect x="14" y="2" width="1.03" height="1.03"/><rect x="18" y="2" width="1.03" height="1.03"/><rect x="20" y="2" width="1.03" height="1.03"/><rect x="21" y="2" width="1.03" height="1.03"/><rect x="22" y="2" width="1.03" height="1.03"/><rect x="24" y="2" width="1.03" height="1.03"/><rect x="0" y="3" width="1.03" height="1.03"/><rect x="2" y="3" width="1.03" height="1.03"/><rect x="3" y="3" width="1.03" height="1.03"/><rect x="4" y="3" width="1.03" height="1.03"/><rect x="6" y="3" width="1.03" height="1.03"/><rect x="10" y="3" width="1.03" height="1.03"/><rect x="11" y="3" width="1.03" height="1.03"/><rect x="13" y="3" width="1.03" height="1.03"/><rect x="15" y="3" width="1.03" height="1.03"/><rect x="18" y="3" width="1.03" height="1.03"/><rect x="20" y="3" width="1.03" height="1.03"/><rect x="21" y="3" width="1.03" height="1.03"/><rect x="22" y="3" width="1.03" height="1.03"/><rect x="24" y="3" width="1.03" height="1.03"/><rect x="0" y="4" width="1.03" height="1.03"/><rect x="2" y="4" width="1.03" height="1.03"/><rect x="3" y="4" width="1.03" height="1.03"/><rect x="4" y="4" width="1.03" height="1.03"/><rect x="6" y="4" width="1.03" height="1.03"/><rect x="9" y="4" width="1.03" height="1.03"/><rect x="11" y="4" width="1.03" height="1.03"/><rect x="14" y="4" width="1.03" height="1.03"/><rect x="16" y="4" width="1.03" height="1.03"/><rect x="18" y="4" width="1.03" height="1.03"/><rect x="20" y="4" width="1.03" height="1.03"/><rect x="21" y="4" width="1.03" height="1.03"/><rect x="22" y="4" width="1.03" height="1.03"/><rect x="24" y="4" width="1.03" height="1.03"/><rect x="0" y="5" width="1.03" height="1.03"/><rect x="6" y="5" width="1.03" height="1.03"/><rect x="8" y="5" width="1.03" height="1.03"/><rect x="9" y="5" width="1.03" height="1.03"/><rect x="10" y="5" width="1.03" height="1.03"/><rect x="12" y="5" width="1.03" height="1.03"/><rect x="13" y="5" width="1.03" height="1.03"/><rect x="14" y="5" width="1.03" height="1.03"/><rect x="16" y="5" width="1.03" height="1.03"/><rect x="18" y="5" width="1.03" height="1.03"/><rect x="24" y="5" width="1.03" height="1.03"/><rect x="0" y="6" width="1.03" height="1.03"/><rect x="1" y="6" width="1.03" height="1.03"/><rect x="2" y="6" width="1.03" height="1.03"/><rect x="3" y="6" width="1.03" height="1.03"/><rect x="4" y="6" width="1.03" height="1.03"/><rect x="5" y="6" width="1.03" height="1.03"/><rect x="6" y="6" width="1.03" height="1.03"/><rect x="8" y="6" width="1.03" height="1.03"/><rect x="10" y="6" width="1.03" height="1.03"/><rect x="12" y="6" width="1.03" height="1.03"/><rect x="14" y="6" width="1.03" height="1.03"/><rect x="16" y="6" width="1.03" height="1.03"/><rect x="18" y="6" width="1.03" height="1.03"/><rect x="19" y="6" width="1.03" height="1.03"/><rect x="20" y="6" width="1.03" height="1.03"/><rect x="21" y="6" width="1.03" height="1.03"/><rect x="22" y="6" width="1.03" height="1.03"/><rect x="23" y="6" width="1.03" height="1.03"/><rect x="24" y="6" width="1.03" height="1.03"/><rect x="9" y="7" width="1.03" height="1.03"/><rect x="11" y="7" width="1.03" height="1.03"/><rect x="12" y="7" width="1.03" height="1.03"/><rect x="14" y="7" width="1.03" height="1.03"/><rect x="15" y="7" width="1.03" height="1.03"/><rect x="16" y="7" width="1.03" height="1.03"/><rect x="0" y="8" width="1.03" height="1.03"/><rect x="2" y="8" width="1.03" height="1.03"/><rect x="6" y="8" width="1.03" height="1.03"/><rect x="7" y="8" width="1.03" height="1.03"/><rect x="9" y="8" width="1.03" height="1.03"/><rect x="10" y="8" width="1.03" height="1.03"/><rect x="12" y="8" width="1.03" height="1.03"/><rect x="16" y="8" width="1.03" height="1.03"/><rect x="19" y="8" width="1.03" height="1.03"/><rect x="22" y="8" width="1.03" height="1.03"/><rect x="24" y="8" width="1.03" height="1.03"/><rect x="1" y="9" width="1.03" height="1.03"/><rect x="2" y="9" width="1.03" height="1.03"/><rect x="7" y="9" width="1.03" height="1.03"/><rect x="10" y="9" width="1.03" height="1.03"/><rect x="11" y="9" width="1.03" height="1.03"/><rect x="13" y="9" width="1.03" height="1.03"/><rect x="15" y="9" width="1.03" height="1.03"/><rect x="16" y="9" width="1.03" height="1.03"/><rect x="18" y="9" width="1.03" height="1.03"/><rect x="19" y="9" width="1.03" height="1.03"/><rect x="21" y="9" width="1.03" height="1.03"/><rect x="23" y="9" width="1.03" height="1.03"/><rect x="24" y="9" width="1.03" height="1.03"/><rect x="0" y="10" width="1.03" height="1.03"/><rect x="3" y="10" width="1.03" height="1.03"/><rect x="4" y="10" width="1.03" height="1.03"/><rect x="6" y="10" width="1.03" height="1.03"/><rect x="7" y="10" width="1.03" height="1.03"/><rect x="8" y="10" width="1.03" height="1.03"/><rect x="11" y="10" width="1.03" height="1.03"/><rect x="14" y="10" width="1.03" height="1.03"/><rect x="15" y="10" width="1.03" height="1.03"/><rect x="17" y="10" width="1.03" height="1.03"/><rect x="18" y="10" width="1.03" height="1.03"/><rect x="19" y="10" width="1.03" height="1.03"/><rect x="20" y="10" width="1.03" height="1.03"/><rect x="21" y="10" width="1.03" height="1.03"/><rect x="22" y="10" width="1.03" height="1.03"/><rect x="24" y="10" width="1.03" height="1.03"/><rect x="5" y="11" width="1.03" height="1.03"/><rect x="7" y="11" width="1.03" height="1.03"/><rect x="8" y="11" width="1.03" height="1.03"/><rect x="11" y="11" width="1.03" height="1.03"/><rect x="14" y="11" width="1.03" height="1.03"/><rect x="15" y="11" width="1.03" height="1.03"/><rect x="17" y="11" width="1.03" height="1.03"/><rect x="19" y="11" width="1.03" height="1.03"/><rect x="21" y="11" width="1.03" height="1.03"/><rect x="0" y="12" width="1.03" height="1.03"/><rect x="2" y="12" width="1.03" height="1.03"/><rect x="5" y="12" width="1.03" height="1.03"/><rect x="6" y="12" width="1.03" height="1.03"/><rect x="12" y="12" width="1.03" height="1.03"/><rect x="15" y="12" width="1.03" height="1.03"/><rect x="18" y="12" width="1.03" height="1.03"/><rect x="24" y="12" width="1.03" height="1.03"/><rect x="1" y="13" width="1.03" height="1.03"/><rect x="2" y="13" width="1.03" height="1.03"/><rect x="3" y="13" width="1.03" height="1.03"/><rect x="5" y="13" width="1.03" height="1.03"/><rect x="7" y="13" width="1.03" height="1.03"/><rect x="9" y="13" width="1.03" height="1.03"/><rect x="10" y="13" width="1.03" height="1.03"/><rect x="12" y="13" width="1.03" height="1.03"/><rect x="15" y="13" width="1.03" height="1.03"/><rect x="16" y="13" width="1.03" height="1.03"/><rect x="18" y="13" width="1.03" height="1.03"/><rect x="19" y="13" width="1.03" height="1.03"/><rect x="23" y="13" width="1.03" height="1.03"/><rect x="24" y="13" width="1.03" height="1.03"/><rect x="0" y="14" width="1.03" height="1.03"/><rect x="1" y="14" width="1.03" height="1.03"/><rect x="4" y="14" width="1.03" height="1.03"/><rect x="5" y="14" width="1.03" height="1.03"/><rect x="6" y="14" width="1.03" height="1.03"/><rect x="8" y="14" width="1.03" height="1.03"/><rect x="9" y="14" width="1.03" height="1.03"/><rect x="12" y="14" width="1.03" height="1.03"/><rect x="14" y="14" width="1.03" height="1.03"/><rect x="15" y="14" width="1.03" height="1.03"/><rect x="16" y="14" width="1.03" height="1.03"/><rect x="21" y="14" width="1.03" height="1.03"/><rect x="22" y="14" width="1.03" height="1.03"/><rect x="24" y="14" width="1.03" height="1.03"/><rect x="2" y="15" width="1.03" height="1.03"/><rect x="3" y="15" width="1.03" height="1.03"/><rect x="4" y="15" width="1.03" height="1.03"/><rect x="7" y="15" width="1.03" height="1.03"/><rect x="9" y="15" width="1.03" height="1.03"/><rect x="11" y="15" width="1.03" height="1.03"/><rect x="12" y="15" width="1.03" height="1.03"/><rect x="15" y="15" width="1.03" height="1.03"/><rect x="16" y="15" width="1.03" height="1.03"/><rect x="19" y="15" width="1.03" height="1.03"/><rect x="20" y="15" width="1.03" height="1.03"/><rect x="21" y="15" width="1.03" height="1.03"/><rect x="0" y="16" width="1.03" height="1.03"/><rect x="1" y="16" width="1.03" height="1.03"/><rect x="2" y="16" width="1.03" height="1.03"/><rect x="4" y="16" width="1.03" height="1.03"/><rect x="6" y="16" width="1.03" height="1.03"/><rect x="9" y="16" width="1.03" height="1.03"/><rect x="12" y="16" width="1.03" height="1.03"/><rect x="14" y="16" width="1.03" height="1.03"/><rect x="16" y="16" width="1.03" height="1.03"/><rect x="17" y="16" width="1.03" height="1.03"/><rect x="18" y="16" width="1.03" height="1.03"/><rect x="19" y="16" width="1.03" height="1.03"/><rect x="20" y="16" width="1.03" height="1.03"/><rect x="23" y="16" width="1.03" height="1.03"/><rect x="8" y="17" width="1.03" height="1.03"/><rect x="9" y="17" width="1.03" height="1.03"/><rect x="13" y="17" width="1.03" height="1.03"/><rect x="14" y="17" width="1.03" height="1.03"/><rect x="16" y="17" width="1.03" height="1.03"/><rect x="20" y="17" width="1.03" height="1.03"/><rect x="24" y="17" width="1.03" height="1.03"/><rect x="0" y="18" width="1.03" height="1.03"/><rect x="1" y="18" width="1.03" height="1.03"/><rect x="2" y="18" width="1.03" height="1.03"/><rect x="3" y="18" width="1.03" height="1.03"/><rect x="4" y="18" width="1.03" height="1.03"/><rect x="5" y="18" width="1.03" height="1.03"/><rect x="6" y="18" width="1.03" height="1.03"/><rect x="8" y="18" width="1.03" height="1.03"/><rect x="9" y="18" width="1.03" height="1.03"/><rect x="10" y="18" width="1.03" height="1.03"/><rect x="11" y="18" width="1.03" height="1.03"/><rect x="12" y="18" width="1.03" height="1.03"/><rect x="13" y="18" width="1.03" height="1.03"/><rect x="14" y="18" width="1.03" height="1.03"/><rect x="16" y="18" width="1.03" height="1.03"/><rect x="18" y="18" width="1.03" height="1.03"/><rect x="20" y="18" width="1.03" height="1.03"/><rect x="24" y="18" width="1.03" height="1.03"/><rect x="0" y="19" width="1.03" height="1.03"/><rect x="6" y="19" width="1.03" height="1.03"/><rect x="9" y="19" width="1.03" height="1.03"/><rect x="10" y="19" width="1.03" height="1.03"/><rect x="12" y="19" width="1.03" height="1.03"/><rect x="14" y="19" width="1.03" height="1.03"/><rect x="16" y="19" width="1.03" height="1.03"/><rect x="20" y="19" width="1.03" height="1.03"/><rect x="23" y="19" width="1.03" height="1.03"/><rect x="0" y="20" width="1.03" height="1.03"/><rect x="2" y="20" width="1.03" height="1.03"/><rect x="3" y="20" width="1.03" height="1.03"/><rect x="4" y="20" width="1.03" height="1.03"/><rect x="6" y="20" width="1.03" height="1.03"/><rect x="9" y="20" width="1.03" height="1.03"/><rect x="11" y="20" width="1.03" height="1.03"/><rect x="12" y="20" width="1.03" height="1.03"/><rect x="13" y="20" width="1.03" height="1.03"/><rect x="15" y="20" width="1.03" height="1.03"/><rect x="16" y="20" width="1.03" height="1.03"/><rect x="17" y="20" width="1.03" height="1.03"/><rect x="18" y="20" width="1.03" height="1.03"/><rect x="19" y="20" width="1.03" height="1.03"/><rect x="20" y="20" width="1.03" height="1.03"/><rect x="23" y="20" width="1.03" height="1.03"/><rect x="0" y="21" width="1.03" height="1.03"/><rect x="2" y="21" width="1.03" height="1.03"/><rect x="3" y="21" width="1.03" height="1.03"/><rect x="4" y="21" width="1.03" height="1.03"/><rect x="6" y="21" width="1.03" height="1.03"/><rect x="10" y="21" width="1.03" height="1.03"/><rect x="11" y="21" width="1.03" height="1.03"/><rect x="12" y="21" width="1.03" height="1.03"/><rect x="13" y="21" width="1.03" height="1.03"/><rect x="15" y="21" width="1.03" height="1.03"/><rect x="17" y="21" width="1.03" height="1.03"/><rect x="20" y="21" width="1.03" height="1.03"/><rect x="22" y="21" width="1.03" height="1.03"/><rect x="23" y="21" width="1.03" height="1.03"/><rect x="0" y="22" width="1.03" height="1.03"/><rect x="2" y="22" width="1.03" height="1.03"/><rect x="3" y="22" width="1.03" height="1.03"/><rect x="4" y="22" width="1.03" height="1.03"/><rect x="6" y="22" width="1.03" height="1.03"/><rect x="8" y="22" width="1.03" height="1.03"/><rect x="9" y="22" width="1.03" height="1.03"/><rect x="11" y="22" width="1.03" height="1.03"/><rect x="14" y="22" width="1.03" height="1.03"/><rect x="15" y="22" width="1.03" height="1.03"/><rect x="17" y="22" width="1.03" height="1.03"/><rect x="19" y="22" width="1.03" height="1.03"/><rect x="20" y="22" width="1.03" height="1.03"/><rect x="21" y="22" width="1.03" height="1.03"/><rect x="23" y="22" width="1.03" height="1.03"/><rect x="24" y="22" width="1.03" height="1.03"/><rect x="0" y="23" width="1.03" height="1.03"/><rect x="6" y="23" width="1.03" height="1.03"/><rect x="9" y="23" width="1.03" height="1.03"/><rect x="10" y="23" width="1.03" height="1.03"/><rect x="14" y="23" width="1.03" height="1.03"/><rect x="15" y="23" width="1.03" height="1.03"/><rect x="16" y="23" width="1.03" height="1.03"/><rect x="17" y="23" width="1.03" height="1.03"/><rect x="18" y="23" width="1.03" height="1.03"/><rect x="19" y="23" width="1.03" height="1.03"/><rect x="20" y="23" width="1.03" height="1.03"/><rect x="0" y="24" width="1.03" height="1.03"/><rect x="1" y="24" width="1.03" height="1.03"/><rect x="2" y="24" width="1.03" height="1.03"/><rect x="3" y="24" width="1.03" height="1.03"/><rect x="4" y="24" width="1.03" height="1.03"/><rect x="5" y="24" width="1.03" height="1.03"/><rect x="6" y="24" width="1.03" height="1.03"/><rect x="8" y="24" width="1.03" height="1.03"/><rect x="9" y="24" width="1.03" height="1.03"/><rect x="11" y="24" width="1.03" height="1.03"/><rect x="14" y="24" width="1.03" height="1.03"/><rect x="16" y="24" width="1.03" height="1.03"/><rect x="17" y="24" width="1.03" height="1.03"/><rect x="18" y="24" width="1.03" height="1.03"/><rect x="21" y="24" width="1.03" height="1.03"/><rect x="24" y="24" width="1.03" height="1.03"/></g></svg><p>Ou ouvre <a href="https://tally.so/r/kb9K1d" target="_blank" rel="noopener">tally.so/r/kb9K1d</a></p></div>
+ </div>
+</div>
+
+<div class="wrap stats"><div class="in">
+ <div class="stat" style="--c:#22B455"><i><svg class="ic" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+  <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+</svg></i><div><b>1 000</b><span>projets de startup en 3 ans</span></div></div>
+ <div class="stat" style="--c:#1D5BD8"><i><svg class="ic" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <rect width="7" height="7" x="3" y="3" rx="1" />
+  <rect width="7" height="7" x="14" y="3" rx="1" />
+  <rect width="7" height="7" x="14" y="14" rx="1" />
+  <rect width="7" height="7" x="3" y="14" rx="1" />
+</svg></i><div><b>9 bornes</b><span>et un diagnostic d'entrée</span></div></div>
+ <div class="stat" style="--c:#F59E0B"><i><svg class="ic" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" />
+  <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" />
+  <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" />
+</svg></i><div><b>39 tâches</b><span>de l'idée à la levée de fonds</span></div></div>
+</div></div>
+<div class="wrap"><div class="livr rv"><svg class="ic" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+  <path d="m9 15 2 2 4-4" />
+</svg><div><b>Chaque entrepreneur repart avec des livrables concrets et actionnables</b><span>Un pitch deck, une grille de prix, un prototype, une marque, un plan de vente : des documents prêts à servir dès le lendemain, envoyés par email.</span></div></div></div>
+
+<section id="disciplines" class="tight"><div class="wrap">
+ <div class="sh rv"><small>Pluridisciplinaire</small><h2>Un contenu qui couvre tous les grands métiers d'une startup</h2></div>
+</div>
+ <div class="rv"><div class="marq"><div class="trk"><span class="m" style="--c:#14B8A6"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" />
+  <circle cx="12" cy="12" r="10" />
+</svg></i>Stratégie</span><span class="m" style="--c:#1D5BD8"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <polyline points="16 18 22 12 16 6" />
+  <polyline points="8 6 2 12 8 18" />
+</svg></i>Produit et tech</span><span class="m" style="--c:#8B5CF6"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+</svg></i>UI, UX et design</span><span class="m" style="--c:#F59E0B"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m3 11 18-5v12L3 14v-3z" />
+  <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" />
+</svg></i>Marketing et marque</span><span class="m" style="--c:#10A35A"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m11 17 2 2a1 1 0 1 0 3-3" />
+  <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
+  <path d="m21 3 1 11h-2" />
+  <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
+  <path d="M3 4h8" />
+</svg></i>Ventes</span><span class="m" style="--c:#EF6C4A"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
+  <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
+</svg></i>Finance</span><span class="m" style="--c:#0B2A6B"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+  <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+  <path d="M7 21h10" />
+  <path d="M12 3v18" />
+  <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
+</svg></i>Juridique</span><span class="m" style="--c:#C2185B"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+  <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+</svg></i>Levée de fonds</span><span class="m" style="--c:#22B455"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+  <circle cx="9" cy="7" r="4" />
+  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+</svg></i>Équipe</span><span class="m" style="--c:#14B8A6"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" />
+  <circle cx="12" cy="12" r="10" />
+</svg></i>Stratégie</span><span class="m" style="--c:#1D5BD8"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <polyline points="16 18 22 12 16 6" />
+  <polyline points="8 6 2 12 8 18" />
+</svg></i>Produit et tech</span><span class="m" style="--c:#8B5CF6"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+</svg></i>UI, UX et design</span><span class="m" style="--c:#F59E0B"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m3 11 18-5v12L3 14v-3z" />
+  <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" />
+</svg></i>Marketing et marque</span><span class="m" style="--c:#10A35A"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m11 17 2 2a1 1 0 1 0 3-3" />
+  <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
+  <path d="m21 3 1 11h-2" />
+  <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
+  <path d="M3 4h8" />
+</svg></i>Ventes</span><span class="m" style="--c:#EF6C4A"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
+  <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
+</svg></i>Finance</span><span class="m" style="--c:#0B2A6B"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+  <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+  <path d="M7 21h10" />
+  <path d="M12 3v18" />
+  <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
+</svg></i>Juridique</span><span class="m" style="--c:#C2185B"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+  <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+</svg></i>Levée de fonds</span><span class="m" style="--c:#22B455"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+  <circle cx="9" cy="7" r="4" />
+  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+</svg></i>Équipe</span></div></div><div class="marq rev"><div class="trk"><span class="m" style="--c:#14B8A6"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" />
+  <circle cx="12" cy="12" r="10" />
+</svg></i>Stratégie</span><span class="m" style="--c:#1D5BD8"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <polyline points="16 18 22 12 16 6" />
+  <polyline points="8 6 2 12 8 18" />
+</svg></i>Produit et tech</span><span class="m" style="--c:#8B5CF6"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+</svg></i>UI, UX et design</span><span class="m" style="--c:#F59E0B"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m3 11 18-5v12L3 14v-3z" />
+  <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" />
+</svg></i>Marketing et marque</span><span class="m" style="--c:#10A35A"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m11 17 2 2a1 1 0 1 0 3-3" />
+  <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
+  <path d="m21 3 1 11h-2" />
+  <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
+  <path d="M3 4h8" />
+</svg></i>Ventes</span><span class="m" style="--c:#EF6C4A"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
+  <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
+</svg></i>Finance</span><span class="m" style="--c:#0B2A6B"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+  <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+  <path d="M7 21h10" />
+  <path d="M12 3v18" />
+  <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
+</svg></i>Juridique</span><span class="m" style="--c:#C2185B"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+  <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+</svg></i>Levée de fonds</span><span class="m" style="--c:#22B455"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+  <circle cx="9" cy="7" r="4" />
+  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+</svg></i>Équipe</span><span class="m" style="--c:#14B8A6"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" />
+  <circle cx="12" cy="12" r="10" />
+</svg></i>Stratégie</span><span class="m" style="--c:#1D5BD8"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <polyline points="16 18 22 12 16 6" />
+  <polyline points="8 6 2 12 8 18" />
+</svg></i>Produit et tech</span><span class="m" style="--c:#8B5CF6"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+</svg></i>UI, UX et design</span><span class="m" style="--c:#F59E0B"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m3 11 18-5v12L3 14v-3z" />
+  <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" />
+</svg></i>Marketing et marque</span><span class="m" style="--c:#10A35A"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m11 17 2 2a1 1 0 1 0 3-3" />
+  <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
+  <path d="m21 3 1 11h-2" />
+  <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
+  <path d="M3 4h8" />
+</svg></i>Ventes</span><span class="m" style="--c:#EF6C4A"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
+  <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
+</svg></i>Finance</span><span class="m" style="--c:#0B2A6B"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+  <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+  <path d="M7 21h10" />
+  <path d="M12 3v18" />
+  <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
+</svg></i>Juridique</span><span class="m" style="--c:#C2185B"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+  <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+</svg></i>Levée de fonds</span><span class="m" style="--c:#22B455"><i><svg class="ic s" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+  <circle cx="9" cy="7" r="4" />
+  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+</svg></i>Équipe</span></div></div></div>
+</section>
+
+<section id="ecosysteme"><div class="wrap">
+ <div class="sh rv"><small>Accompagner en masse, avec tout l'écosystème</small><h2>Faire émerger la nouvelle génération d'entrepreneurs technologiques ivoiriens</h2><p>Les contenus et les outils de la Clinique Startup sont diffusés partout en Côte d'Ivoire par les acteurs qui accompagnent déjà les entrepreneurs.</p></div>
+ <div class="hub rv">
+  <svg class="lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+   <line x1="50" y1="50" x2="16" y2="18"/><line x1="50" y1="50" x2="84" y2="18"/><line x1="50" y1="50" x2="16" y2="82"/><line x1="50" y1="50" x2="84" y2="82"/>
+  </svg>
+  <div class="node n1"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -336,7 +1005,8 @@ footer img{height:40px;width:auto}
   <path d="m4 6 7.106-3.553a2 2 0 0 1 1.788 0L20 6" />
   <path d="M6 5v17" />
   <circle cx="12" cy="9" r="2" />
-</svg> Universités</div><div><svg class="ic" aria-hidden="true"
+</svg><b>Universités</b><span>étudiants et enseignants</span></div>
+  <div class="node n2"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -352,8 +1022,24 @@ footer img{height:40px;width:auto}
   <path d="M10 20c5.5-2.5.8-6.4 3-10" />
   <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z" />
   <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z" />
-</svg> Incubateurs</div>
-   <div><svg class="ic" aria-hidden="true"
+</svg><b>Incubateurs</b><span>projets en démarrage</span></div>
+  <div class="core"><i><svg class="ic" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" />
+  <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" />
+  <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" />
+</svg></i><b>Contenus et outils de la Clinique Startup</b><span>méthode, 39 tâches, propulsés par l'IA</span></div>
+  <div class="node n3"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -369,7 +1055,8 @@ footer img{height:40px;width:auto}
   <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
   <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
   <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
-</svg> Accélérateurs</div><div><svg class="ic" aria-hidden="true"
+</svg><b>Accélérateurs</b><span>startups en croissance</span></div>
+  <div class="node n4"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -386,15 +1073,9 @@ footer img{height:40px;width:auto}
   <path d="m21 3 1 11h-2" />
   <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
   <path d="M3 4h8" />
-</svg> Acteurs de l'écosystème</div>
-  </div>
+</svg><b>Acteurs de l'écosystème</b><span>réseaux, PME, partenaires</span></div>
  </div>
-</div></section>
-
-<section id="pour-qui"><div class="wrap">
- <div class="sh rv"><small>Pour qui</small><h2>Ouvert à tous ceux qui construisent</h2><p>Que tu démarres ou que ton entreprise tourne déjà, tu choisis la borne qui te concerne.</p></div>
- <div class="cibles rv">
-  <div class="cible"><div class="i"><svg class="ic" aria-hidden="true"
+ <div class="out rv"><span><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -406,10 +1087,50 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
-  <path d="M9 18h6" />
-  <path d="M10 22h4" />
-</svg></div><h3>Entrepreneurs</h3><p>Tu as une idée ou un prototype et tu veux la tester sur de vrais clients.</p></div>
+  <path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" />
+</svg></span><div><b>Étudiants, startups et PME, dans tout le pays</b><em>1 000 projets de startup en 3 ans</em></div></div>
+ <div class="cadre rv">
+  <div class="loi2"><i><svg class="ic" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <line x1="3" x2="21" y1="22" y2="22" />
+  <line x1="6" x2="6" y1="18" y2="11" />
+  <line x1="10" x2="10" y1="18" y2="11" />
+  <line x1="14" x2="14" y1="18" y2="11" />
+  <line x1="18" x2="18" y1="18" y2="11" />
+  <polygon points="12 2 20 7 4 7" />
+</svg></i><div><small>Loi Startup</small><b>Une mise en œuvre concrète de la loi Startup</b><p>Accompagner à grande échelle les startups ivoiriennes pour qu'elles se structurent et accèdent aux dispositifs qui leur sont destinés.</p></div></div>
+  <div class="pil"><i><svg class="ic" aria-hidden="true"
+ 
+  xmlns="http://www.w3.org/2000/svg"
+ 
+ 
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
+  <line x1="4" x2="4" y1="22" y2="15" />
+</svg></i><div><small>Pilier 3</small><b>Développement de l'écosystème de l'innovation technologique</b><p>Un des 40 projets du Ministère de la Transition Numérique et de l'Innovation Technologique.</p></div></div>
+ </div>
+</div></section>
+
+<section id="pour-qui"><div class="wrap">
+ <div class="sh rv"><small>Pour qui</small><h2>Étudiants, startups et PME de Côte d'Ivoire</h2><p>Que tu démarres ou que ton entreprise tourne déjà, tu choisis la borne qui te concerne.</p></div>
+ <div class="cibles rv">
   <div class="cible"><div class="i"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -467,7 +1188,7 @@ footer img{height:40px;width:auto}
 </div></section>
 
 <section id="comment"><div class="wrap">
- <div class="sh rv"><small>Comment</small><h2>Former, outiller, accompagner avec l'IA</h2><p>Les agents IA de la Clinique ne font pas de démonstration : ils travaillent sur ton projet, avec tes chiffres, ton marché et tes clients.</p></div>
+ <div class="sh rv"><small>Comment</small><h2>Former, outiller, accompagner avec l'IA</h2></div>
  <div class="how rv">
   <div class="leviers">
    <div class="levier"><div class="i"><svg class="ic" aria-hidden="true"
@@ -485,7 +1206,7 @@ footer img{height:40px;width:auto}
   <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
   <path d="M22 10v6" />
   <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
-</svg></div><div><h4>Formations et montée en compétences</h4><p>Chaque tâche t'explique pourquoi elle compte et comment la mener.</p></div></div>
+</svg></div><div><h4>Formations</h4><p>et montée en compétences</p></div></div>
    <div class="levier"><div class="i"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -501,7 +1222,7 @@ footer img{height:40px;width:auto}
   <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" />
   <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" />
   <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" />
-</svg></div><div><h4>Contenus de formation et outils pratiques</h4><p>Des gabarits prêts à remplir : grilles, tableurs, trames d'entretien, pitch deck.</p></div></div>
+</svg></div><div><h4>Contenus</h4><p>de formation et outils pratiques</p></div></div>
    <div class="levier"><div class="i"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -520,7 +1241,7 @@ footer img{height:40px;width:auto}
   <path d="M20 14h2" />
   <path d="M15 13v2" />
   <path d="M9 13v2" />
-</svg></div><div><h4>Agents IA dédiés à l'entrepreneuriat</h4><p>Un agent par tâche, entraîné sur la méthode, qui produit le livrable avec toi.</p></div></div>
+</svg></div><div><h4>Agents IA</h4><p>dédiés à l'entrepreneuriat</p></div></div>
   </div>
   <div class="chat" aria-label="Exemple d'échange avec un agent IA">
    <div class="hd"><span class="av"><svg class="ic s" aria-hidden="true"
@@ -541,11 +1262,11 @@ footer img{height:40px;width:auto}
   <path d="M20 14h2" />
   <path d="M15 13v2" />
   <path d="M9 13v2" />
-</svg></span>Agent IA, borne 6<em>au travail</em></div>
-   <div class="msg u">Je vends des paniers de légumes aux restaurants d'Abidjan. À quel prix je dois vendre ?</div>
-   <div class="msg a">On part de tes coûts, puis on compare avec les concurrents de ta zone. Combien te coûte un panier livré ?</div>
-   <div class="msg u">Je te donne mes coûts d'achat et de livraison.</div>
-   <div class="msg a">Voici ton business model et ta grille de prix, avec trois formules à tester auprès de tes clients.</div>
+</svg></span>Agent IA au travail<em>en cours</em></div>
+   <div class="msg u">Je lance une appli pour payer les frais de scolarité par mobile money. Combien je prends par paiement ?</div>
+   <div class="msg a">On part de tes coûts, puis on regarde ce que facturent les autres solutions de paiement. Combien te coûte une transaction ?</div>
+   <div class="msg u">Je te donne mes frais d'opérateur et mes coûts fixes.</div>
+   <div class="msg a">Voici ton business model et ta grille de prix, avec trois formules à tester auprès des écoles.</div>
    <div class="doc"><div class="i"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -567,7 +1288,7 @@ footer img{height:40px;width:auto}
 </div></section>
 
 <section id="parcours"><div class="wrap">
- <div class="sh rv"><small>Le parcours</small><h2>Quatre étapes, un livrable à la clé</h2></div>
+ <div class="sh rv"><small>Le parcours</small><h2>Quatre étapes, des livrables à la clé</h2></div>
  <ol class="parcours rv"><li class=""><div class="pi"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -617,7 +1338,7 @@ footer img{height:40px;width:auto}
   <path d="M20 14h2" />
   <path d="M15 13v2" />
   <path d="M9 13v2" />
-</svg></div><span class="pn">03</span><h4>Je travaille avec l'IA</h4><p>À la borne, l'agent IA traite une tâche avec moi, sur mon vrai projet, aidé par un membre du staff.</p></li><li class="hl"><div class="pi"><svg class="ic" aria-hidden="true"
+</svg></div><span class="pn">03</span><h4>Je travaille avec l'IA</h4><p>À la borne, je traite une tâche avec l'IA, sur mon vrai projet, aidé par un membre du staff.</p></li><li class="hl"><div class="pi"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -632,261 +1353,14 @@ footer img{height:40px;width:auto}
   <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
   <path d="M14 2v4a2 2 0 0 0 2 2h4" />
   <path d="m9 15 2 2 4-4" />
-</svg></div><span class="pn">04</span><h4>Je repars avec mon livrable</h4><p>Envoyé par email, avec les actions à mener dans les trente jours.</p></li></ol>
+</svg></div><span class="pn">04</span><h4>Je repars avec mes livrables</h4><p>Concrets et actionnables, envoyés par email avec les actions à mener dans les trente jours.</p></li></ol>
 </div></section>
 
-<section id="disciplines"><div class="wrap">
- <div class="sh rv"><small>Pluridisciplinaire</small><h2>Toutes les disciplines d'une startup, au même endroit</h2><p>Les 41 tâches couvrent tout ce dont une jeune entreprise a besoin pour grandir.</p></div>
- <div class="disc rv"><div class="d" style="--c:#14B8A6"><i><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
-  <path d="M9 18h6" />
-  <path d="M10 22h4" />
-</svg></i><span>Stratégie et validation d&#x27;idée<small>Bornes 1 et 6</small></span></div><div class="d" style="--c:#1D5BD8"><i><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M12 8V4H8" />
-  <rect width="16" height="12" x="4" y="8" rx="2" />
-  <path d="M2 14h2" />
-  <path d="M20 14h2" />
-  <path d="M15 13v2" />
-  <path d="M9 13v2" />
-</svg></i><span>Intelligence artificielle<small>Borne 1</small></span></div><div class="d" style="--c:#1D5BD8"><i><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-  <circle cx="9" cy="7" r="4" />
-  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-</svg></i><span>Ressources humaines et équipe<small>Borne 2</small></span></div><div class="d" style="--c:#4BA3D9"><i><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
-</svg></i><span>Recherche client<small>Borne 3</small></span></div><div class="d" style="--c:#8B5CF6"><i><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
-  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
-  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
-  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
-  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
-</svg></i><span>Marque et design<small>Borne 4</small></span></div><div class="d" style="--c:#F59E0B"><i><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
-  <path d="M12 18h.01" />
-</svg></i><span>Produit et UX<small>Borne 5</small></span></div><div class="d" style="--c:#F59E0B"><i><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <polyline points="16 18 22 12 16 6" />
-  <polyline points="8 6 2 12 8 18" />
-</svg></i><span>Développement technique<small>Borne 5</small></span></div><div class="d" style="--c:#10A35A"><i><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
-  <polyline points="16 7 22 7 22 13" />
-</svg></i><span>Marché et business model<small>Borne 6</small></span></div><div class="d" style="--c:#EF6C4A"><i><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="m3 11 18-5v12L3 14v-3z" />
-  <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" />
-</svg></i><span>Marketing et vente<small>Borne 7</small></span></div><div class="d" style="--c:#EF6C4A"><i><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M7 20h10" />
-  <path d="M10 20c5.5-2.5.8-6.4 3-10" />
-  <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z" />
-  <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z" />
-</svg></i><span>Mesure d&#x27;impact<small>Borne 7</small></span></div><div class="d" style="--c:#0B2A6B"><i><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
-  <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
-</svg></i><span>Finance<small>Borne 8</small></span></div><div class="d" style="--c:#0B2A6B"><i><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
-  <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
-  <path d="M7 21h10" />
-  <path d="M12 3v18" />
-  <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
-</svg></i><span>Juridique<small>Borne 8</small></span></div><div class="d" style="--c:#C2185B"><i><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
-  <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
-  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
-  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
-</svg></i><span>Levée de fonds<small>Borne 9</small></span></div><div class="d" style="--c:#C2185B"><i><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-  <rect width="20" height="14" x="2" y="6" rx="2" />
-</svg></i><span>Relation investisseurs<small>Borne 9</small></span></div><div class="d" style="--c:#EF6C4A"><i><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="m11 17 2 2a1 1 0 1 0 3-3" />
-  <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
-  <path d="m21 3 1 11h-2" />
-  <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
-  <path d="M3 4h8" />
-</svg></i><span>Partenariats<small>Borne 7</small></span></div><div class="d" style="--c:#22B455"><i><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <circle cx="12" cy="12" r="10" />
-  <circle cx="12" cy="12" r="6" />
-  <circle cx="12" cy="12" r="2" />
-</svg></i><span>Pilotage et objectifs<small>Borne 0</small></span></div></div>
-</div></section>
+
 
 <section id="bornes"><div class="wrap">
- <div class="sh rv"><small>Les 10 bornes</small><h2>Une question de fondateur par borne</h2><p>Ouvre une borne pour découvrir chacune de ses tâches : à quoi elle sert, la forme du livrable et ce qu'il contient. Chaque borne a aussi son groupe Telegram.</p></div>
- <div class="diag rv"><div><div class="tag">Borne 0 · Le diagnostic</div><h3>Par où je commence ?</h3>
+ <div class="sh rv"><small>Le diagnostic et les 9 bornes</small><h2>9 étapes clés pour passer de l'idée à la levée de fonds</h2><p>Ouvre une borne pour découvrir ses tâches : à quoi chacune sert, la forme du livrable et ce qu'il contient.</p></div>
+ <div class="diag rv"><div><div class="tag">Étape 1 · Avant les bornes</div><h3>Le diagnostic d'entrée</h3>
 <p>Scanne le QR code et réponds à une dizaine de questions courtes sur ton projet : stade, équipe, clients, chiffre d'affaires, financement. Le diagnostic situe ta startup sur le parcours et t'indique les bornes à faire en priorité.</p>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
@@ -928,8 +1402,7 @@ footer img{height:40px;width:auto}
   <path d="M16 12h1" />
   <path d="M21 12v.01" />
   <path d="M12 21v-1" />
-</svg> Faire mon diagnostic</a>
-<button class="btn tgs" data-open="d0">Voir le détail</button></div></div>
+</svg> Faire mon diagnostic</a></div></div>
 <div class="qr2"><svg class="qr" viewBox="-1 -1 27 27" shape-rendering="crispEdges" role="img" aria-label="QR code du diagnostic"><g fill="#0B2A6B"><rect x="0" y="0" width="1.03" height="1.03"/><rect x="1" y="0" width="1.03" height="1.03"/><rect x="2" y="0" width="1.03" height="1.03"/><rect x="3" y="0" width="1.03" height="1.03"/><rect x="4" y="0" width="1.03" height="1.03"/><rect x="5" y="0" width="1.03" height="1.03"/><rect x="6" y="0" width="1.03" height="1.03"/><rect x="8" y="0" width="1.03" height="1.03"/><rect x="13" y="0" width="1.03" height="1.03"/><rect x="18" y="0" width="1.03" height="1.03"/><rect x="19" y="0" width="1.03" height="1.03"/><rect x="20" y="0" width="1.03" height="1.03"/><rect x="21" y="0" width="1.03" height="1.03"/><rect x="22" y="0" width="1.03" height="1.03"/><rect x="23" y="0" width="1.03" height="1.03"/><rect x="24" y="0" width="1.03" height="1.03"/><rect x="0" y="1" width="1.03" height="1.03"/><rect x="6" y="1" width="1.03" height="1.03"/><rect x="10" y="1" width="1.03" height="1.03"/><rect x="13" y="1" width="1.03" height="1.03"/><rect x="16" y="1" width="1.03" height="1.03"/><rect x="18" y="1" width="1.03" height="1.03"/><rect x="24" y="1" width="1.03" height="1.03"/><rect x="0" y="2" width="1.03" height="1.03"/><rect x="2" y="2" width="1.03" height="1.03"/><rect x="3" y="2" width="1.03" height="1.03"/><rect x="4" y="2" width="1.03" height="1.03"/><rect x="6" y="2" width="1.03" height="1.03"/><rect x="8" y="2" width="1.03" height="1.03"/><rect x="10" y="2" width="1.03" height="1.03"/><rect x="12" y="2" width="1.03" height="1.03"/><rect x="13" y="2" width="1.03" height="1.03"/><rect x="14" y="2" width="1.03" height="1.03"/><rect x="18" y="2" width="1.03" height="1.03"/><rect x="20" y="2" width="1.03" height="1.03"/><rect x="21" y="2" width="1.03" height="1.03"/><rect x="22" y="2" width="1.03" height="1.03"/><rect x="24" y="2" width="1.03" height="1.03"/><rect x="0" y="3" width="1.03" height="1.03"/><rect x="2" y="3" width="1.03" height="1.03"/><rect x="3" y="3" width="1.03" height="1.03"/><rect x="4" y="3" width="1.03" height="1.03"/><rect x="6" y="3" width="1.03" height="1.03"/><rect x="10" y="3" width="1.03" height="1.03"/><rect x="11" y="3" width="1.03" height="1.03"/><rect x="13" y="3" width="1.03" height="1.03"/><rect x="15" y="3" width="1.03" height="1.03"/><rect x="18" y="3" width="1.03" height="1.03"/><rect x="20" y="3" width="1.03" height="1.03"/><rect x="21" y="3" width="1.03" height="1.03"/><rect x="22" y="3" width="1.03" height="1.03"/><rect x="24" y="3" width="1.03" height="1.03"/><rect x="0" y="4" width="1.03" height="1.03"/><rect x="2" y="4" width="1.03" height="1.03"/><rect x="3" y="4" width="1.03" height="1.03"/><rect x="4" y="4" width="1.03" height="1.03"/><rect x="6" y="4" width="1.03" height="1.03"/><rect x="9" y="4" width="1.03" height="1.03"/><rect x="11" y="4" width="1.03" height="1.03"/><rect x="14" y="4" width="1.03" height="1.03"/><rect x="16" y="4" width="1.03" height="1.03"/><rect x="18" y="4" width="1.03" height="1.03"/><rect x="20" y="4" width="1.03" height="1.03"/><rect x="21" y="4" width="1.03" height="1.03"/><rect x="22" y="4" width="1.03" height="1.03"/><rect x="24" y="4" width="1.03" height="1.03"/><rect x="0" y="5" width="1.03" height="1.03"/><rect x="6" y="5" width="1.03" height="1.03"/><rect x="8" y="5" width="1.03" height="1.03"/><rect x="9" y="5" width="1.03" height="1.03"/><rect x="10" y="5" width="1.03" height="1.03"/><rect x="12" y="5" width="1.03" height="1.03"/><rect x="13" y="5" width="1.03" height="1.03"/><rect x="14" y="5" width="1.03" height="1.03"/><rect x="16" y="5" width="1.03" height="1.03"/><rect x="18" y="5" width="1.03" height="1.03"/><rect x="24" y="5" width="1.03" height="1.03"/><rect x="0" y="6" width="1.03" height="1.03"/><rect x="1" y="6" width="1.03" height="1.03"/><rect x="2" y="6" width="1.03" height="1.03"/><rect x="3" y="6" width="1.03" height="1.03"/><rect x="4" y="6" width="1.03" height="1.03"/><rect x="5" y="6" width="1.03" height="1.03"/><rect x="6" y="6" width="1.03" height="1.03"/><rect x="8" y="6" width="1.03" height="1.03"/><rect x="10" y="6" width="1.03" height="1.03"/><rect x="12" y="6" width="1.03" height="1.03"/><rect x="14" y="6" width="1.03" height="1.03"/><rect x="16" y="6" width="1.03" height="1.03"/><rect x="18" y="6" width="1.03" height="1.03"/><rect x="19" y="6" width="1.03" height="1.03"/><rect x="20" y="6" width="1.03" height="1.03"/><rect x="21" y="6" width="1.03" height="1.03"/><rect x="22" y="6" width="1.03" height="1.03"/><rect x="23" y="6" width="1.03" height="1.03"/><rect x="24" y="6" width="1.03" height="1.03"/><rect x="9" y="7" width="1.03" height="1.03"/><rect x="11" y="7" width="1.03" height="1.03"/><rect x="12" y="7" width="1.03" height="1.03"/><rect x="14" y="7" width="1.03" height="1.03"/><rect x="15" y="7" width="1.03" height="1.03"/><rect x="16" y="7" width="1.03" height="1.03"/><rect x="0" y="8" width="1.03" height="1.03"/><rect x="2" y="8" width="1.03" height="1.03"/><rect x="6" y="8" width="1.03" height="1.03"/><rect x="7" y="8" width="1.03" height="1.03"/><rect x="9" y="8" width="1.03" height="1.03"/><rect x="10" y="8" width="1.03" height="1.03"/><rect x="12" y="8" width="1.03" height="1.03"/><rect x="16" y="8" width="1.03" height="1.03"/><rect x="19" y="8" width="1.03" height="1.03"/><rect x="22" y="8" width="1.03" height="1.03"/><rect x="24" y="8" width="1.03" height="1.03"/><rect x="1" y="9" width="1.03" height="1.03"/><rect x="2" y="9" width="1.03" height="1.03"/><rect x="7" y="9" width="1.03" height="1.03"/><rect x="10" y="9" width="1.03" height="1.03"/><rect x="11" y="9" width="1.03" height="1.03"/><rect x="13" y="9" width="1.03" height="1.03"/><rect x="15" y="9" width="1.03" height="1.03"/><rect x="16" y="9" width="1.03" height="1.03"/><rect x="18" y="9" width="1.03" height="1.03"/><rect x="19" y="9" width="1.03" height="1.03"/><rect x="21" y="9" width="1.03" height="1.03"/><rect x="23" y="9" width="1.03" height="1.03"/><rect x="24" y="9" width="1.03" height="1.03"/><rect x="0" y="10" width="1.03" height="1.03"/><rect x="3" y="10" width="1.03" height="1.03"/><rect x="4" y="10" width="1.03" height="1.03"/><rect x="6" y="10" width="1.03" height="1.03"/><rect x="7" y="10" width="1.03" height="1.03"/><rect x="8" y="10" width="1.03" height="1.03"/><rect x="11" y="10" width="1.03" height="1.03"/><rect x="14" y="10" width="1.03" height="1.03"/><rect x="15" y="10" width="1.03" height="1.03"/><rect x="17" y="10" width="1.03" height="1.03"/><rect x="18" y="10" width="1.03" height="1.03"/><rect x="19" y="10" width="1.03" height="1.03"/><rect x="20" y="10" width="1.03" height="1.03"/><rect x="21" y="10" width="1.03" height="1.03"/><rect x="22" y="10" width="1.03" height="1.03"/><rect x="24" y="10" width="1.03" height="1.03"/><rect x="5" y="11" width="1.03" height="1.03"/><rect x="7" y="11" width="1.03" height="1.03"/><rect x="8" y="11" width="1.03" height="1.03"/><rect x="11" y="11" width="1.03" height="1.03"/><rect x="14" y="11" width="1.03" height="1.03"/><rect x="15" y="11" width="1.03" height="1.03"/><rect x="17" y="11" width="1.03" height="1.03"/><rect x="19" y="11" width="1.03" height="1.03"/><rect x="21" y="11" width="1.03" height="1.03"/><rect x="0" y="12" width="1.03" height="1.03"/><rect x="2" y="12" width="1.03" height="1.03"/><rect x="5" y="12" width="1.03" height="1.03"/><rect x="6" y="12" width="1.03" height="1.03"/><rect x="12" y="12" width="1.03" height="1.03"/><rect x="15" y="12" width="1.03" height="1.03"/><rect x="18" y="12" width="1.03" height="1.03"/><rect x="24" y="12" width="1.03" height="1.03"/><rect x="1" y="13" width="1.03" height="1.03"/><rect x="2" y="13" width="1.03" height="1.03"/><rect x="3" y="13" width="1.03" height="1.03"/><rect x="5" y="13" width="1.03" height="1.03"/><rect x="7" y="13" width="1.03" height="1.03"/><rect x="9" y="13" width="1.03" height="1.03"/><rect x="10" y="13" width="1.03" height="1.03"/><rect x="12" y="13" width="1.03" height="1.03"/><rect x="15" y="13" width="1.03" height="1.03"/><rect x="16" y="13" width="1.03" height="1.03"/><rect x="18" y="13" width="1.03" height="1.03"/><rect x="19" y="13" width="1.03" height="1.03"/><rect x="23" y="13" width="1.03" height="1.03"/><rect x="24" y="13" width="1.03" height="1.03"/><rect x="0" y="14" width="1.03" height="1.03"/><rect x="1" y="14" width="1.03" height="1.03"/><rect x="4" y="14" width="1.03" height="1.03"/><rect x="5" y="14" width="1.03" height="1.03"/><rect x="6" y="14" width="1.03" height="1.03"/><rect x="8" y="14" width="1.03" height="1.03"/><rect x="9" y="14" width="1.03" height="1.03"/><rect x="12" y="14" width="1.03" height="1.03"/><rect x="14" y="14" width="1.03" height="1.03"/><rect x="15" y="14" width="1.03" height="1.03"/><rect x="16" y="14" width="1.03" height="1.03"/><rect x="21" y="14" width="1.03" height="1.03"/><rect x="22" y="14" width="1.03" height="1.03"/><rect x="24" y="14" width="1.03" height="1.03"/><rect x="2" y="15" width="1.03" height="1.03"/><rect x="3" y="15" width="1.03" height="1.03"/><rect x="4" y="15" width="1.03" height="1.03"/><rect x="7" y="15" width="1.03" height="1.03"/><rect x="9" y="15" width="1.03" height="1.03"/><rect x="11" y="15" width="1.03" height="1.03"/><rect x="12" y="15" width="1.03" height="1.03"/><rect x="15" y="15" width="1.03" height="1.03"/><rect x="16" y="15" width="1.03" height="1.03"/><rect x="19" y="15" width="1.03" height="1.03"/><rect x="20" y="15" width="1.03" height="1.03"/><rect x="21" y="15" width="1.03" height="1.03"/><rect x="0" y="16" width="1.03" height="1.03"/><rect x="1" y="16" width="1.03" height="1.03"/><rect x="2" y="16" width="1.03" height="1.03"/><rect x="4" y="16" width="1.03" height="1.03"/><rect x="6" y="16" width="1.03" height="1.03"/><rect x="9" y="16" width="1.03" height="1.03"/><rect x="12" y="16" width="1.03" height="1.03"/><rect x="14" y="16" width="1.03" height="1.03"/><rect x="16" y="16" width="1.03" height="1.03"/><rect x="17" y="16" width="1.03" height="1.03"/><rect x="18" y="16" width="1.03" height="1.03"/><rect x="19" y="16" width="1.03" height="1.03"/><rect x="20" y="16" width="1.03" height="1.03"/><rect x="23" y="16" width="1.03" height="1.03"/><rect x="8" y="17" width="1.03" height="1.03"/><rect x="9" y="17" width="1.03" height="1.03"/><rect x="13" y="17" width="1.03" height="1.03"/><rect x="14" y="17" width="1.03" height="1.03"/><rect x="16" y="17" width="1.03" height="1.03"/><rect x="20" y="17" width="1.03" height="1.03"/><rect x="24" y="17" width="1.03" height="1.03"/><rect x="0" y="18" width="1.03" height="1.03"/><rect x="1" y="18" width="1.03" height="1.03"/><rect x="2" y="18" width="1.03" height="1.03"/><rect x="3" y="18" width="1.03" height="1.03"/><rect x="4" y="18" width="1.03" height="1.03"/><rect x="5" y="18" width="1.03" height="1.03"/><rect x="6" y="18" width="1.03" height="1.03"/><rect x="8" y="18" width="1.03" height="1.03"/><rect x="9" y="18" width="1.03" height="1.03"/><rect x="10" y="18" width="1.03" height="1.03"/><rect x="11" y="18" width="1.03" height="1.03"/><rect x="12" y="18" width="1.03" height="1.03"/><rect x="13" y="18" width="1.03" height="1.03"/><rect x="14" y="18" width="1.03" height="1.03"/><rect x="16" y="18" width="1.03" height="1.03"/><rect x="18" y="18" width="1.03" height="1.03"/><rect x="20" y="18" width="1.03" height="1.03"/><rect x="24" y="18" width="1.03" height="1.03"/><rect x="0" y="19" width="1.03" height="1.03"/><rect x="6" y="19" width="1.03" height="1.03"/><rect x="9" y="19" width="1.03" height="1.03"/><rect x="10" y="19" width="1.03" height="1.03"/><rect x="12" y="19" width="1.03" height="1.03"/><rect x="14" y="19" width="1.03" height="1.03"/><rect x="16" y="19" width="1.03" height="1.03"/><rect x="20" y="19" width="1.03" height="1.03"/><rect x="23" y="19" width="1.03" height="1.03"/><rect x="0" y="20" width="1.03" height="1.03"/><rect x="2" y="20" width="1.03" height="1.03"/><rect x="3" y="20" width="1.03" height="1.03"/><rect x="4" y="20" width="1.03" height="1.03"/><rect x="6" y="20" width="1.03" height="1.03"/><rect x="9" y="20" width="1.03" height="1.03"/><rect x="11" y="20" width="1.03" height="1.03"/><rect x="12" y="20" width="1.03" height="1.03"/><rect x="13" y="20" width="1.03" height="1.03"/><rect x="15" y="20" width="1.03" height="1.03"/><rect x="16" y="20" width="1.03" height="1.03"/><rect x="17" y="20" width="1.03" height="1.03"/><rect x="18" y="20" width="1.03" height="1.03"/><rect x="19" y="20" width="1.03" height="1.03"/><rect x="20" y="20" width="1.03" height="1.03"/><rect x="23" y="20" width="1.03" height="1.03"/><rect x="0" y="21" width="1.03" height="1.03"/><rect x="2" y="21" width="1.03" height="1.03"/><rect x="3" y="21" width="1.03" height="1.03"/><rect x="4" y="21" width="1.03" height="1.03"/><rect x="6" y="21" width="1.03" height="1.03"/><rect x="10" y="21" width="1.03" height="1.03"/><rect x="11" y="21" width="1.03" height="1.03"/><rect x="12" y="21" width="1.03" height="1.03"/><rect x="13" y="21" width="1.03" height="1.03"/><rect x="15" y="21" width="1.03" height="1.03"/><rect x="17" y="21" width="1.03" height="1.03"/><rect x="20" y="21" width="1.03" height="1.03"/><rect x="22" y="21" width="1.03" height="1.03"/><rect x="23" y="21" width="1.03" height="1.03"/><rect x="0" y="22" width="1.03" height="1.03"/><rect x="2" y="22" width="1.03" height="1.03"/><rect x="3" y="22" width="1.03" height="1.03"/><rect x="4" y="22" width="1.03" height="1.03"/><rect x="6" y="22" width="1.03" height="1.03"/><rect x="8" y="22" width="1.03" height="1.03"/><rect x="9" y="22" width="1.03" height="1.03"/><rect x="11" y="22" width="1.03" height="1.03"/><rect x="14" y="22" width="1.03" height="1.03"/><rect x="15" y="22" width="1.03" height="1.03"/><rect x="17" y="22" width="1.03" height="1.03"/><rect x="19" y="22" width="1.03" height="1.03"/><rect x="20" y="22" width="1.03" height="1.03"/><rect x="21" y="22" width="1.03" height="1.03"/><rect x="23" y="22" width="1.03" height="1.03"/><rect x="24" y="22" width="1.03" height="1.03"/><rect x="0" y="23" width="1.03" height="1.03"/><rect x="6" y="23" width="1.03" height="1.03"/><rect x="9" y="23" width="1.03" height="1.03"/><rect x="10" y="23" width="1.03" height="1.03"/><rect x="14" y="23" width="1.03" height="1.03"/><rect x="15" y="23" width="1.03" height="1.03"/><rect x="16" y="23" width="1.03" height="1.03"/><rect x="17" y="23" width="1.03" height="1.03"/><rect x="18" y="23" width="1.03" height="1.03"/><rect x="19" y="23" width="1.03" height="1.03"/><rect x="20" y="23" width="1.03" height="1.03"/><rect x="0" y="24" width="1.03" height="1.03"/><rect x="1" y="24" width="1.03" height="1.03"/><rect x="2" y="24" width="1.03" height="1.03"/><rect x="3" y="24" width="1.03" height="1.03"/><rect x="4" y="24" width="1.03" height="1.03"/><rect x="5" y="24" width="1.03" height="1.03"/><rect x="6" y="24" width="1.03" height="1.03"/><rect x="8" y="24" width="1.03" height="1.03"/><rect x="9" y="24" width="1.03" height="1.03"/><rect x="11" y="24" width="1.03" height="1.03"/><rect x="14" y="24" width="1.03" height="1.03"/><rect x="16" y="24" width="1.03" height="1.03"/><rect x="17" y="24" width="1.03" height="1.03"/><rect x="18" y="24" width="1.03" height="1.03"/><rect x="21" y="24" width="1.03" height="1.03"/><rect x="24" y="24" width="1.03" height="1.03"/></g></svg><b>Scanne-moi</b></div></div>
  <div class="bornes"><article class="borne rv" style="--c:#14B8A6"><div class="bh"><div class="bi"><svg class="ic" aria-hidden="true"
  
@@ -947,7 +1420,7 @@ footer img{height:40px;width:auto}
   <path d="M9 18h6" />
   <path d="M10 22h4" />
 </svg></div><div class="bnum">Borne 1</div></div>
-<h3>Mon idée tient-elle la route ?</h3><div class="theme">L&#x27;idée</div><p class="pour">Pour le porteur qui veut vérifier que son idée répond à un vrai problème avant d&#x27;y passer deux ans.</p><ul class="tl"><li><b>1</b> Construire une startup AI native</li><li><b>2</b> Validation de l&#x27;idée</li><li><b>3</b> Étude des comparables</li><li><b>6</b> Mur des comparables</li></ul>
+<h3>L&#x27;idée</h3><p class="pour">Pour le porteur qui veut vérifier que son idée répond à un vrai problème avant d&#x27;y passer deux ans.</p><ul class="tl"><li><b>0</b> Onboarding</li><li><b>2</b> Validation de l&#x27;idée</li><li><b>3</b> Étude des comparables</li><li><b>6</b> Mur des comparables</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -979,7 +1452,7 @@ footer img{height:40px;width:auto}
   <path d="M5 12h14" />
   <path d="m12 5 7 7-7 7" />
 </svg></button>
-<a class="btn tgs" href="https://t.me/c/3749044184/5295" target="_blank" rel="noopener" aria-label="Groupe Telegram de la borne 1"><svg class="ic s" aria-hidden="true"
+<a class="btn tgs" href="https://t.me/c/3749044184/5295" target="_blank" rel="noopener" aria-label="Espace d'échange de la borne 1" title="Espace d'échange de la borne 1"><svg class="ic s" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -991,8 +1464,7 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
 </svg></a></div></article>
 <article class="borne rv" style="--c:#1D5BD8"><div class="bh"><div class="bi"><svg class="ic" aria-hidden="true"
  
@@ -1011,7 +1483,7 @@ footer img{height:40px;width:auto}
   <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
   <path d="M16 3.13a4 4 0 0 1 0 7.75" />
 </svg></div><div class="bnum">Borne 2</div></div>
-<h3>Trouve ton binôme</h3><div class="theme">L&#x27;équipe fondatrice</div><p class="pour">Pour le fondateur seul, ou l&#x27;équipe qui ne s&#x27;est jamais mise d&#x27;accord par écrit.</p><ul class="tl"><li><b>4</b> Recherche du bon cofondateur</li><li><b>5</b> Alignement des cofondateurs</li><li><b>33</b> Composition de l&#x27;équipe</li></ul>
+<h3>L&#x27;équipe</h3><p class="pour">Pour le fondateur seul, ou l&#x27;équipe qui ne s&#x27;est jamais mise d&#x27;accord par écrit.</p><ul class="tl"><li><b>4</b> Recherche du bon cofondateur</li><li><b>5</b> Alignement des cofondateurs</li><li><b>33</b> Composition de l&#x27;équipe</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -1043,7 +1515,7 @@ footer img{height:40px;width:auto}
   <path d="M5 12h14" />
   <path d="m12 5 7 7-7 7" />
 </svg></button>
-<a class="btn tgs" href="https://t.me/c/3749044184/5297" target="_blank" rel="noopener" aria-label="Groupe Telegram de la borne 2"><svg class="ic s" aria-hidden="true"
+<a class="btn tgs" href="https://t.me/c/3749044184/5297" target="_blank" rel="noopener" aria-label="Espace d'échange de la borne 2" title="Espace d'échange de la borne 2"><svg class="ic s" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -1055,8 +1527,7 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
 </svg></a></div></article>
 <article class="borne rv" style="--c:#4BA3D9"><div class="bh"><div class="bi"><svg class="ic" aria-hidden="true"
  
@@ -1072,7 +1543,7 @@ footer img{height:40px;width:auto}
 >
   <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
 </svg></div><div class="bnum">Borne 3</div></div>
-<h3>Va parler à tes clients</h3><div class="theme">Le client</div><p class="pour">Pour la startup qui connaît son produit mieux que ses clients.</p><ul class="tl"><li><b>7</b> Découverte client</li><li><b>8</b> Entretiens écosystème</li><li><b>18</b> Parcours client</li><li><b>19</b> Proposition de valeur</li></ul>
+<h3>Le client</h3><p class="pour">Pour la startup qui connaît son produit mieux que ses clients.</p><ul class="tl"><li><b>7</b> Découverte client</li><li><b>8</b> Entretiens écosystème</li><li><b>18</b> Parcours client</li><li><b>19</b> Proposition de valeur</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -1104,7 +1575,7 @@ footer img{height:40px;width:auto}
   <path d="M5 12h14" />
   <path d="m12 5 7 7-7 7" />
 </svg></button>
-<a class="btn tgs" href="https://t.me/c/3749044184/5298" target="_blank" rel="noopener" aria-label="Groupe Telegram de la borne 3"><svg class="ic s" aria-hidden="true"
+<a class="btn tgs" href="https://t.me/c/3749044184/5298" target="_blank" rel="noopener" aria-label="Espace d'échange de la borne 3" title="Espace d'échange de la borne 3"><svg class="ic s" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -1116,8 +1587,7 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
 </svg></a></div></article>
 <article class="borne rv" style="--c:#8B5CF6"><div class="bh"><div class="bi"><svg class="ic" aria-hidden="true"
  
@@ -1134,7 +1604,7 @@ footer img{height:40px;width:auto}
   <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
   <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
 </svg></div><div class="bnum">Borne 4</div></div>
-<h3>Donne-toi un nom</h3><div class="theme">La marque</div><p class="pour">Pour la startup qui n&#x27;a pas encore de nom, ou dont l&#x27;image ne reflète pas ce qu&#x27;elle fait.</p><ul class="tl"><li><b>9</b> Nom de la startup</li><li><b>12</b> Branding de base</li><li><b>13</b> Nom de domaine et landing page</li><li><b>14</b> Branding avancé</li></ul>
+<h3>La marque</h3><p class="pour">Pour la startup qui n&#x27;a pas encore de nom, ou dont l&#x27;image ne reflète pas ce qu&#x27;elle fait.</p><ul class="tl"><li><b>9</b> Nom de la startup</li><li><b>12</b> Branding de base</li><li><b>13</b> Nom de domaine et landing page</li><li><b>14</b> Branding avancé</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -1166,7 +1636,7 @@ footer img{height:40px;width:auto}
   <path d="M5 12h14" />
   <path d="m12 5 7 7-7 7" />
 </svg></button>
-<a class="btn tgs" href="https://t.me/c/3749044184/5299" target="_blank" rel="noopener" aria-label="Groupe Telegram de la borne 4"><svg class="ic s" aria-hidden="true"
+<a class="btn tgs" href="https://t.me/c/3749044184/5299" target="_blank" rel="noopener" aria-label="Espace d'échange de la borne 4" title="Espace d'échange de la borne 4"><svg class="ic s" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -1178,8 +1648,7 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
 </svg></a></div></article>
 <article class="borne rv" style="--c:#F59E0B"><div class="bh"><div class="bi"><svg class="ic" aria-hidden="true"
  
@@ -1196,7 +1665,7 @@ footer img{height:40px;width:auto}
   <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
   <path d="M12 18h.01" />
 </svg></div><div class="bnum">Borne 5</div></div>
-<h3>Construis ton MVP</h3><div class="theme">Le produit</div><p class="pour">Pour la startup qui doit passer de l&#x27;idée à un produit que des clients utilisent.</p><ul class="tl"><li><b>10</b> Prototypage</li><li><b>11</b> Test du prototype</li><li><b>15</b> Architecture technique</li><li><b>16</b> Développement du MVP</li><li><b>17</b> Publication sur les stores</li><li><b>34</b> Feuille de route produit</li></ul>
+<h3>Le produit</h3><p class="pour">Pour la startup qui doit passer de l&#x27;idée à un produit que des clients utilisent.</p><ul class="tl"><li><b>10</b> Prototypage</li><li><b>11</b> Test du prototype</li><li><b>15</b> Architecture technique</li><li><b>16</b> Développement du MVP</li><li><b>17</b> Publication sur les stores</li><li><b>34</b> Feuille de route produit</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -1228,7 +1697,7 @@ footer img{height:40px;width:auto}
   <path d="M5 12h14" />
   <path d="m12 5 7 7-7 7" />
 </svg></button>
-<a class="btn tgs" href="https://t.me/c/3749044184/5301" target="_blank" rel="noopener" aria-label="Groupe Telegram de la borne 5"><svg class="ic s" aria-hidden="true"
+<a class="btn tgs" href="https://t.me/c/3749044184/5301" target="_blank" rel="noopener" aria-label="Espace d'échange de la borne 5" title="Espace d'échange de la borne 5"><svg class="ic s" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -1240,8 +1709,7 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
 </svg></a></div></article>
 <article class="borne rv" style="--c:#10A35A"><div class="bh"><div class="bi"><svg class="ic" aria-hidden="true"
  
@@ -1258,7 +1726,7 @@ footer img{height:40px;width:auto}
   <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
   <polyline points="16 7 22 7 22 13" />
 </svg></div><div class="bnum">Borne 6</div></div>
-<h3>Combien ça rapporte ?</h3><div class="theme">Le marché et le modèle</div><p class="pour">Pour la startup qui doit chiffrer son marché et fixer ses prix.</p><ul class="tl"><li><b>20</b> Analyse concurrentielle</li><li><b>21</b> Business model et prix</li><li><b>23</b> Taille de marché</li><li><b>28</b> Adaptation locale</li></ul>
+<h3>Le marché</h3><p class="pour">Pour la startup qui doit chiffrer son marché et fixer ses prix.</p><ul class="tl"><li><b>20</b> Analyse concurrentielle</li><li><b>21</b> Business model et prix</li><li><b>23</b> Taille de marché</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -1275,7 +1743,7 @@ footer img{height:40px;width:auto}
   <path d="M14 2v4a2 2 0 0 0 2 2h4" />
   <path d="m9 15 2 2 4-4" />
 </svg><div><small>Tu repars avec</small>Une taille de marché défendable devant un investisseur et une grille de prix</div></div>
-<div class="bact"><button class="btn open" data-open="d6">Les 4 tâches et livrables <svg class="ic s" aria-hidden="true"
+<div class="bact"><button class="btn open" data-open="d6">Les 3 tâches et livrables <svg class="ic s" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -1290,7 +1758,7 @@ footer img{height:40px;width:auto}
   <path d="M5 12h14" />
   <path d="m12 5 7 7-7 7" />
 </svg></button>
-<a class="btn tgs" href="https://t.me/c/3749044184/5302" target="_blank" rel="noopener" aria-label="Groupe Telegram de la borne 6"><svg class="ic s" aria-hidden="true"
+<a class="btn tgs" href="https://t.me/c/3749044184/5302" target="_blank" rel="noopener" aria-label="Espace d'échange de la borne 6" title="Espace d'échange de la borne 6"><svg class="ic s" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -1302,8 +1770,7 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
 </svg></a></div></article>
 <article class="borne rv" style="--c:#EF6C4A"><div class="bh"><div class="bi"><svg class="ic" aria-hidden="true"
  
@@ -1323,7 +1790,7 @@ footer img{height:40px;width:auto}
   <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
   <path d="M3 4h8" />
 </svg></div><div class="bnum">Borne 7</div></div>
-<h3>Décroche tes 10 premiers clients</h3><div class="theme">Les premiers clients</div><p class="pour">Pour la startup qui a un produit et doit maintenant vendre.</p><ul class="tl"><li><b>22</b> Pilote (POC)</li><li><b>25</b> Partenaires clés</li><li><b>26</b> Go-to-market</li><li><b>27</b> Premières ventes et encaissement</li><li><b>29</b> Mesure d&#x27;impact</li></ul>
+<h3>Les premiers clients</h3><p class="pour">Pour la startup qui a un produit et doit maintenant vendre.</p><ul class="tl"><li><b>22</b> Pilote (POC)</li><li><b>25</b> Partenaires clés</li><li><b>26</b> Go-to-market</li><li><b>27</b> Premières ventes et encaissement</li><li><b>29</b> Mesure d&#x27;impact</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -1355,7 +1822,7 @@ footer img{height:40px;width:auto}
   <path d="M5 12h14" />
   <path d="m12 5 7 7-7 7" />
 </svg></button>
-<a class="btn tgs" href="https://t.me/c/3749044184/5303" target="_blank" rel="noopener" aria-label="Groupe Telegram de la borne 7"><svg class="ic s" aria-hidden="true"
+<a class="btn tgs" href="https://t.me/c/3749044184/5303" target="_blank" rel="noopener" aria-label="Espace d'échange de la borne 7" title="Espace d'échange de la borne 7"><svg class="ic s" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -1367,8 +1834,7 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
 </svg></a></div></article>
 <article class="borne rv" style="--c:#0B2A6B"><div class="bh"><div class="bi"><svg class="ic" aria-hidden="true"
  
@@ -1385,7 +1851,7 @@ footer img{height:40px;width:auto}
   <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
   <path d="m9 12 2 2 4-4" />
 </svg></div><div class="bnum">Borne 8</div></div>
-<h3>Blinde ta boîte</h3><div class="theme">Le juridique et les finances</div><p class="pour">Pour la startup qui doit se structurer avant de grandir ou de lever.</p><ul class="tl"><li><b>30</b> Projections top-line</li><li><b>31</b> Création de la société</li><li><b>32</b> Socle juridique</li><li><b>35</b> Projections financières</li></ul>
+<h3>Les finances</h3><p class="pour">Pour la startup qui doit se structurer avant de grandir ou de lever.</p><ul class="tl"><li><b>30</b> Projections top-line</li><li><b>31</b> Création de la société</li><li><b>32</b> Socle juridique</li><li><b>35</b> Projections financières</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -1417,7 +1883,7 @@ footer img{height:40px;width:auto}
   <path d="M5 12h14" />
   <path d="m12 5 7 7-7 7" />
 </svg></button>
-<a class="btn tgs" href="https://t.me/c/3749044184/5304" target="_blank" rel="noopener" aria-label="Groupe Telegram de la borne 8"><svg class="ic s" aria-hidden="true"
+<a class="btn tgs" href="https://t.me/c/3749044184/5304" target="_blank" rel="noopener" aria-label="Espace d'échange de la borne 8" title="Espace d'échange de la borne 8"><svg class="ic s" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -1429,8 +1895,7 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
 </svg></a></div></article>
 <article class="borne rv" style="--c:#C2185B"><div class="bh"><div class="bi"><svg class="ic" aria-hidden="true"
  
@@ -1449,7 +1914,7 @@ footer img{height:40px;width:auto}
   <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
   <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
 </svg></div><div class="bnum">Borne 9</div></div>
-<h3>Lève tes premiers fonds</h3><div class="theme">La levée de fonds</div><p class="pour">Pour la startup qui se prépare à rencontrer des investisseurs.</p><ul class="tl"><li><b>24</b> Cartographie du financement</li><li><b>36</b> Pitch deck</li><li><b>37</b> Stratégie de sortie</li><li><b>38</b> Data room</li><li><b>39</b> Pitch devant le comité d&#x27;investissement</li><li><b>40</b> Bilan de fin de parcours</li></ul>
+<h3>La levée</h3><p class="pour">Pour la startup qui se prépare à rencontrer des investisseurs.</p><ul class="tl"><li><b>24</b> Cartographie du financement</li><li><b>36</b> Pitch deck</li><li><b>37</b> Stratégie de sortie</li><li><b>38</b> Data room</li><li><b>39</b> Pitch devant le comité d&#x27;investissement</li><li><b>40</b> Bilan de fin de parcours</li></ul>
 <div class="rep"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -1481,7 +1946,7 @@ footer img{height:40px;width:auto}
   <path d="M5 12h14" />
   <path d="m12 5 7 7-7 7" />
 </svg></button>
-<a class="btn tgs" href="https://t.me/c/3749044184/5305" target="_blank" rel="noopener" aria-label="Groupe Telegram de la borne 9"><svg class="ic s" aria-hidden="true"
+<a class="btn tgs" href="https://t.me/c/3749044184/5305" target="_blank" rel="noopener" aria-label="Espace d'échange de la borne 9" title="Espace d'échange de la borne 9"><svg class="ic s" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -1493,19 +1958,15 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
 </svg></a></div></article></div>
 </div></section>
 
-<section id="exemples"><div class="wrap">
- <div class="sh rv"><small>Exemples de livrables</small><h2>Ce que tu emportes, en vrai</h2><p>Quelques pages de livrables produits à la Clinique, sur l'exemple d'une startup qui vend des matériaux de construction.</p></div>
- <div class="galerie rv"><figure class="ex"><div class="im"><img src="img/ex-10-5.webp" alt="Prototype de l&#x27;application" loading="lazy"></div><figcaption class="c"><b>Prototype de l&#x27;application</b><span>Borne 5 : les écrans du parcours</span></figcaption></figure><figure class="ex"><div class="im"><img src="img/ex-10-6.webp" alt="Écrans de livraison et de paiement" loading="lazy"></div><figcaption class="c"><b>Écrans de livraison et de paiement</b><span>Borne 5 : la suite du prototype</span></figcaption></figure><figure class="ex"><div class="im"><img src="img/ex-12-6.webp" alt="Kit de marque : la palette" loading="lazy"></div><figcaption class="c"><b>Kit de marque : la palette</b><span>Borne 4 : couleurs et usages</span></figcaption></figure><figure class="ex"><div class="im"><img src="img/ex-12-8.webp" alt="Kit de marque : les pistes de logo" loading="lazy"></div><figcaption class="c"><b>Kit de marque : les pistes de logo</b><span>Borne 4 : la piste retenue</span></figcaption></figure><figure class="ex"><div class="im"><img src="img/ex-36-1.webp" alt="Pitch deck : la couverture" loading="lazy"></div><figcaption class="c"><b>Pitch deck : la couverture</b><span>Borne 9 : le récit pour les investisseurs</span></figcaption></figure><figure class="ex"><div class="im"><img src="img/ex-36-4.webp" alt="Pitch deck : problème et solution" loading="lazy"></div><figcaption class="c"><b>Pitch deck : problème et solution</b><span>Borne 9 : une slide clé</span></figcaption></figure></div>
-</div></section>
+
 
 <div class="wrap"><div class="final rv">
- <h2>Rejoins l'espace Telegram de la Clinique Startup</h2>
- <p>Les infos du jour, un groupe par borne et l'équipe pour répondre à tes questions.</p>
+ <h2>Rejoins l'espace d'échange de la Clinique Startup</h2>
+ <p>Un espace par borne pour poser tes questions, partager ton avancée et continuer avec l'équipe.</p>
  <div class="ctas"><a class="btn tg" href="https://t.me/+p8CjOk8q7yBmZmRk" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -1518,9 +1979,8 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
-</svg> Rejoindre sur Telegram</a>
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+</svg> Rejoindre l'espace d'échange</a>
  <a class="btn lime" href="https://tally.so/r/kb9K1d" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -1549,7 +2009,7 @@ footer img{height:40px;width:auto}
 </div></div>
 
 <footer><div class="wrap"><img src="img/itf-logo.webp" alt="Ivoire Tech Forum"><span>Clinique Startup, Ivoire Tech Forum 2026</span></div></footer>
-<a class="float" href="https://t.me/+p8CjOk8q7yBmZmRk" target="_blank" rel="noopener" aria-label="Rejoindre l'espace Telegram"><svg class="ic" aria-hidden="true"
+<a class="float" href="https://t.me/+p8CjOk8q7yBmZmRk" target="_blank" rel="noopener" aria-label="Rejoindre l'espace d'échange"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -1561,74 +2021,10 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
 </svg></a>
 
-<dialog id="d0" style="--c:#22B455" aria-label="Borne 0"><div class="dh"><small>Borne 0 · Le diagnostic</small><h3>Par où je commence ?</h3><p>À l&#x27;entrée de la Clinique, avant les neuf bornes.</p>
-<button class="x" aria-label="Fermer"><svg class="ic" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M18 6 6 18" />
-  <path d="m6 6 12 12" />
-</svg></button></div><div class="db">
-<div class="rep"><svg class="ic" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-  <path d="m9 15 2 2 4-4" />
-</svg><div><small>Tu repars avec</small>Ta fiche de diagnostic et ton parcours personnalisé dans la Clinique</div></div>
-<article class="tk"><div class="tt"><span class="n">0</span><div><h4>Onboarding</h4><p class="why">Savoir d&#x27;où tu pars t&#x27;évite de t&#x27;éparpiller : tu sais quoi faire en premier et tu mesures ton progrès.</p></div></div>
-<span class="fmt"><svg class="ic s" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-  <path d="m9 15 2 2 4-4" />
-</svg> Tableur de suivi et document d&#x27;une page</span><ul><li>Ta fiche « À propos » : startup, dates de démarrage et de sortie, référent</li><li>Le tableau de suivi de toutes les tâches du parcours, avec statut et échéance</li><li>Tes trois à cinq objectifs à 90 jours</li><li>Ton point de départ mesuré au jour 1 et ton calendrier des points d&#x27;étape</li><li>La préparation d&#x27;un point d&#x27;étape : tenu contre promis, ce qui ne marche pas, décisions attendues</li></ul></article><a class="btn tg" href="https://t.me/+p8CjOk8q7yBmZmRk" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
-</svg> Rejoindre le groupe Telegram de la borne 0</a></div></dialog>
-<dialog id="d1" style="--c:#14B8A6" aria-label="Borne 1"><div class="dh"><small>Borne 1 · L&#x27;idée</small><h3>Mon idée tient-elle la route ?</h3><p>Pour le porteur qui veut vérifier que son idée répond à un vrai problème avant d&#x27;y passer deux ans.</p>
+<dialog id="d1" style="--c:#14B8A6" aria-label="Borne 1"><div class="dh"><small>Borne 1</small><h3>L&#x27;idée</h3><p>Pour le porteur qui veut vérifier que son idée répond à un vrai problème avant d&#x27;y passer deux ans.</p>
 <button class="x" aria-label="Fermer"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -1660,7 +2056,7 @@ footer img{height:40px;width:auto}
   <path d="M14 2v4a2 2 0 0 0 2 2h4" />
   <path d="m9 15 2 2 4-4" />
 </svg><div><small>Tu repars avec</small>Une idée testée et la liste des startups dont tu peux s&#x27;inspirer</div></div>
-<article class="tk"><div class="tt"><span class="n">1</span><div><h4>Construire une startup AI native</h4><p class="why">Comprendre où l&#x27;IA crée vraiment de la valeur chez toi, et si ton modèle reste rentable quand tu grandis.</p></div></div>
+<article class="tk"><div class="tt"><span class="n">0</span><div><h4>Onboarding</h4><p class="why">Savoir d&#x27;où tu pars t&#x27;évite de t&#x27;éparpiller : tu sais quoi faire en premier et tu mesures ton progrès.</p></div></div>
 <span class="fmt"><svg class="ic s" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -1676,7 +2072,7 @@ footer img{height:40px;width:auto}
   <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
   <path d="M14 2v4a2 2 0 0 0 2 2h4" />
   <path d="m9 15 2 2 4-4" />
-</svg> Note d&#x27;une page</span><ul><li>Où l&#x27;IA se place : dans le produit, dans l&#x27;opération ou dans la construction</li><li>Le test du retrait : ce qui reste si on enlève l&#x27;IA</li><li>Le coût d&#x27;une interaction et d&#x27;un client actif par mois</li><li>Ce qui te protège, et ce qu&#x27;un concurrent devrait faire pour te rattraper</li><li>En annexe, la carte de tes usages de l&#x27;IA</li></ul></article><article class="tk"><div class="tt"><span class="n">2</span><div><h4>Validation de l&#x27;idée</h4><p class="why">Savoir avant d&#x27;investir deux ans si de vrais clients sont prêts à payer pour ton idée.</p></div></div>
+</svg> Tableur de suivi et document d&#x27;une page</span><ul><li>Ta fiche « À propos » : startup, dates de démarrage et de sortie, référent</li><li>Le tableau de suivi de toutes les tâches du parcours, avec statut et échéance</li><li>Tes trois à cinq objectifs à 90 jours</li><li>Ton point de départ mesuré au jour 1 et ton calendrier des points d&#x27;étape</li><li>La préparation d&#x27;un point d&#x27;étape : tenu contre promis, ce qui ne marche pas, décisions attendues</li></ul></article><article class="tk"><div class="tt"><span class="n">2</span><div><h4>Validation de l&#x27;idée</h4><p class="why">Savoir avant d&#x27;investir deux ans si de vrais clients sont prêts à payer pour ton idée.</p></div></div>
 <span class="fmt"><svg class="ic s" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -1736,10 +2132,9 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
-</svg> Rejoindre le groupe Telegram de la borne 1</a></div></dialog>
-<dialog id="d2" style="--c:#1D5BD8" aria-label="Borne 2"><div class="dh"><small>Borne 2 · L&#x27;équipe fondatrice</small><h3>Trouve ton binôme</h3><p>Pour le fondateur seul, ou l&#x27;équipe qui ne s&#x27;est jamais mise d&#x27;accord par écrit.</p>
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+</svg> Rejoindre l'espace d'échange de la borne 1</a></div></dialog>
+<dialog id="d2" style="--c:#1D5BD8" aria-label="Borne 2"><div class="dh"><small>Borne 2</small><h3>L&#x27;équipe</h3><p>Pour le fondateur seul, ou l&#x27;équipe qui ne s&#x27;est jamais mise d&#x27;accord par écrit.</p>
 <button class="x" aria-label="Fermer"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -1831,10 +2226,9 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
-</svg> Rejoindre le groupe Telegram de la borne 2</a></div></dialog>
-<dialog id="d3" style="--c:#4BA3D9" aria-label="Borne 3"><div class="dh"><small>Borne 3 · Le client</small><h3>Va parler à tes clients</h3><p>Pour la startup qui connaît son produit mieux que ses clients.</p>
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+</svg> Rejoindre l'espace d'échange de la borne 2</a></div></dialog>
+<dialog id="d3" style="--c:#4BA3D9" aria-label="Borne 3"><div class="dh"><small>Borne 3</small><h3>Le client</h3><p>Pour la startup qui connaît son produit mieux que ses clients.</p>
 <button class="x" aria-label="Fermer"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -1942,10 +2336,9 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
-</svg> Rejoindre le groupe Telegram de la borne 3</a></div></dialog>
-<dialog id="d4" style="--c:#8B5CF6" aria-label="Borne 4"><div class="dh"><small>Borne 4 · La marque</small><h3>Donne-toi un nom</h3><p>Pour la startup qui n&#x27;a pas encore de nom, ou dont l&#x27;image ne reflète pas ce qu&#x27;elle fait.</p>
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+</svg> Rejoindre l'espace d'échange de la borne 3</a></div></dialog>
+<dialog id="d4" style="--c:#8B5CF6" aria-label="Borne 4"><div class="dh"><small>Borne 4</small><h3>La marque</h3><p>Pour la startup qui n&#x27;a pas encore de nom, ou dont l&#x27;image ne reflète pas ce qu&#x27;elle fait.</p>
 <button class="x" aria-label="Fermer"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -2009,7 +2402,7 @@ footer img{height:40px;width:auto}
   <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
   <path d="M14 2v4a2 2 0 0 0 2 2h4" />
   <path d="m9 15 2 2 4-4" />
-</svg> Présentation</span><ul><li>Les couleurs du secteur et ton écart assumé</li><li>Les accroches des concurrents et ton positionnement</li><li>Ce qui se fait en logos et illustrations</li><li>Ton kit de marque : palette, typographie, accroche, trois à cinq logos</li><li>Les règles d&#x27;usage du logo</li></ul><figure><img src="img/ex-12-6.webp" alt="La palette de couleurs du kit de marque" loading="lazy"><figcaption>Exemple : La palette de couleurs du kit de marque</figcaption></figure></article><article class="tk"><div class="tt"><span class="n">13</span><div><h4>Nom de domaine et landing page</h4><p class="why">Une page en ligne te permet de tester ta promesse et de collecter tes premiers contacts.</p></div></div>
+</svg> Présentation</span><ul><li>Les couleurs du secteur et ton écart assumé</li><li>Les accroches des concurrents et ton positionnement</li><li>Ce qui se fait en logos et illustrations</li><li>Ton kit de marque : palette, typographie, accroche, trois à cinq logos</li><li>Les règles d&#x27;usage du logo</li></ul></article><article class="tk"><div class="tt"><span class="n">13</span><div><h4>Nom de domaine et landing page</h4><p class="why">Une page en ligne te permet de tester ta promesse et de collecter tes premiers contacts.</p></div></div>
 <span class="fmt"><svg class="ic s" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -2053,10 +2446,9 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
-</svg> Rejoindre le groupe Telegram de la borne 4</a></div></dialog>
-<dialog id="d5" style="--c:#F59E0B" aria-label="Borne 5"><div class="dh"><small>Borne 5 · Le produit</small><h3>Construis ton MVP</h3><p>Pour la startup qui doit passer de l&#x27;idée à un produit que des clients utilisent.</p>
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+</svg> Rejoindre l'espace d'échange de la borne 4</a></div></dialog>
+<dialog id="d5" style="--c:#F59E0B" aria-label="Borne 5"><div class="dh"><small>Borne 5</small><h3>Le produit</h3><p>Pour la startup qui doit passer de l&#x27;idée à un produit que des clients utilisent.</p>
 <button class="x" aria-label="Fermer"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -2104,7 +2496,7 @@ footer img{height:40px;width:auto}
   <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
   <path d="M14 2v4a2 2 0 0 0 2 2h4" />
   <path d="m9 15 2 2 4-4" />
-</svg> Maquettes d&#x27;écrans cliquables, mobile ou web</span><ul><li>Le parcours utilisateur, de la première action à la valeur obtenue</li><li>Les écrans du prototype, modifiables</li><li>Les instructions qui ont servi à générer les écrans, réutilisables</li><li>Le journal des versions</li></ul><figure><img src="img/ex-10-5.webp" alt="Les écrans du prototype, du réachat à la fiche produit" loading="lazy"><figcaption>Exemple : Les écrans du prototype, du réachat à la fiche produit</figcaption></figure></article><article class="tk"><div class="tt"><span class="n">11</span><div><h4>Test du prototype</h4><p class="why">Voir de vrais utilisateurs bloquer sur ton prototype coûte moins cher que de le découvrir après le lancement.</p></div></div>
+</svg> Maquettes d&#x27;écrans cliquables, mobile ou web</span><ul><li>Le parcours utilisateur, de la première action à la valeur obtenue</li><li>Les écrans du prototype, modifiables</li><li>Les instructions qui ont servi à générer les écrans, réutilisables</li><li>Le journal des versions</li></ul></article><article class="tk"><div class="tt"><span class="n">11</span><div><h4>Test du prototype</h4><p class="why">Voir de vrais utilisateurs bloquer sur ton prototype coûte moins cher que de le découvrir après le lancement.</p></div></div>
 <span class="fmt"><svg class="ic s" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -2196,10 +2588,9 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
-</svg> Rejoindre le groupe Telegram de la borne 5</a></div></dialog>
-<dialog id="d6" style="--c:#10A35A" aria-label="Borne 6"><div class="dh"><small>Borne 6 · Le marché et le modèle</small><h3>Combien ça rapporte ?</h3><p>Pour la startup qui doit chiffrer son marché et fixer ses prix.</p>
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+</svg> Rejoindre l'espace d'échange de la borne 5</a></div></dialog>
+<dialog id="d6" style="--c:#10A35A" aria-label="Borne 6"><div class="dh"><small>Borne 6</small><h3>Le marché</h3><p>Pour la startup qui doit chiffrer son marché et fixer ses prix.</p>
 <button class="x" aria-label="Fermer"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -2279,8 +2670,7 @@ footer img{height:40px;width:auto}
   <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
   <path d="M14 2v4a2 2 0 0 0 2 2h4" />
   <path d="m9 15 2 2 4-4" />
-</svg> Tableur et slide pour ton pitch</span><ul><li>La taille de ton marché en Côte d&#x27;Ivoire, dans l&#x27;UEMOA et en Afrique francophone</li><li>Une source pour chaque chiffre et des hypothèses écrites</li><li>La segmentation et la projection de revenus</li><li>Une vérification de cohérence avec le marché global</li><li>La slide prête pour ton pitch</li></ul></article><article class="tk"><div class="tt"><span class="n">28</span><div><h4>Adaptation locale</h4><p class="why">Un modèle qui marche ailleurs doit souvent changer pour marcher ici.</p></div></div>
-<span class="fmt"><svg class="ic s" aria-hidden="true"
+</svg> Tableur et slide pour ton pitch</span><ul><li>La taille de ton marché en Côte d&#x27;Ivoire, dans l&#x27;UEMOA et en Afrique francophone</li><li>Une source pour chaque chiffre et des hypothèses écrites</li><li>La segmentation et la projection de revenus</li><li>Une vérification de cohérence avec le marché global</li><li>La slide prête pour ton pitch</li></ul></article><a class="btn tg" href="https://t.me/c/3749044184/5302" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
  
@@ -2292,25 +2682,9 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-  <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-  <path d="m9 15 2 2 4-4" />
-</svg> Document de synthèse et tableur</span><ul><li>Ce que tu croyais au départ et ce que le terrain a dit</li><li>Les écarts, dimension par dimension</li><li>Ton modèle adapté en une page</li><li>Ce que tu gardes, ce que tu abandonnes</li><li>La liste finale de six comparables et d&#x27;une startup modèle</li></ul></article><a class="btn tg" href="https://t.me/c/3749044184/5302" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"
- 
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
-</svg> Rejoindre le groupe Telegram de la borne 6</a></div></dialog>
-<dialog id="d7" style="--c:#EF6C4A" aria-label="Borne 7"><div class="dh"><small>Borne 7 · Les premiers clients</small><h3>Décroche tes 10 premiers clients</h3><p>Pour la startup qui a un produit et doit maintenant vendre.</p>
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+</svg> Rejoindre l'espace d'échange de la borne 6</a></div></dialog>
+<dialog id="d7" style="--c:#EF6C4A" aria-label="Borne 7"><div class="dh"><small>Borne 7</small><h3>Les premiers clients</h3><p>Pour la startup qui a un produit et doit maintenant vendre.</p>
 <button class="x" aria-label="Fermer"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -2434,10 +2808,9 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
-</svg> Rejoindre le groupe Telegram de la borne 7</a></div></dialog>
-<dialog id="d8" style="--c:#0B2A6B" aria-label="Borne 8"><div class="dh"><small>Borne 8 · Le juridique et les finances</small><h3>Blinde ta boîte</h3><p>Pour la startup qui doit se structurer avant de grandir ou de lever.</p>
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+</svg> Rejoindre l'espace d'échange de la borne 7</a></div></dialog>
+<dialog id="d8" style="--c:#0B2A6B" aria-label="Borne 8"><div class="dh"><small>Borne 8</small><h3>Les finances</h3><p>Pour la startup qui doit se structurer avant de grandir ou de lever.</p>
 <button class="x" aria-label="Fermer"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -2545,10 +2918,9 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
-</svg> Rejoindre le groupe Telegram de la borne 8</a></div></dialog>
-<dialog id="d9" style="--c:#C2185B" aria-label="Borne 9"><div class="dh"><small>Borne 9 · La levée de fonds</small><h3>Lève tes premiers fonds</h3><p>Pour la startup qui se prépare à rencontrer des investisseurs.</p>
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+</svg> Rejoindre l'espace d'échange de la borne 8</a></div></dialog>
+<dialog id="d9" style="--c:#C2185B" aria-label="Borne 9"><div class="dh"><small>Borne 9</small><h3>La levée</h3><p>Pour la startup qui se prépare à rencontrer des investisseurs.</p>
 <button class="x" aria-label="Fermer"><svg class="ic" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -2612,7 +2984,7 @@ footer img{height:40px;width:auto}
   <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
   <path d="M14 2v4a2 2 0 0 0 2 2h4" />
   <path d="m9 15 2 2 4-4" />
-</svg> Présentation de 10 à 12 slides</span><ul><li>Accroche, mission, problème, solution, produit</li><li>Le marché, les comparables et la concurrence</li><li>L&#x27;équipe et le modèle économique</li><li>La traction, le go-to-market et les projections</li><li>L&#x27;utilisation des fonds, puis les retours d&#x27;au moins trois relecteurs</li></ul><figure><img src="img/ex-36-4.webp" alt="Une slide du pitch deck : le problème et la solution" loading="lazy"><figcaption>Exemple : Une slide du pitch deck : le problème et la solution</figcaption></figure></article><article class="tk"><div class="tt"><span class="n">37</span><div><h4>Stratégie de sortie</h4><p class="why">Savoir qui pourrait te racheter t&#x27;aide à construire une startup qui a de la valeur.</p></div></div>
+</svg> Présentation de 10 à 12 slides</span><ul><li>Accroche, mission, problème, solution, produit</li><li>Le marché, les comparables et la concurrence</li><li>L&#x27;équipe et le modèle économique</li><li>La traction, le go-to-market et les projections</li><li>L&#x27;utilisation des fonds, puis les retours d&#x27;au moins trois relecteurs</li></ul></article><article class="tk"><div class="tt"><span class="n">37</span><div><h4>Stratégie de sortie</h4><p class="why">Savoir qui pourrait te racheter t&#x27;aide à construire une startup qui a de la valeur.</p></div></div>
 <span class="fmt"><svg class="ic s" aria-hidden="true"
  
   xmlns="http://www.w3.org/2000/svg"
@@ -2688,9 +3060,8 @@ footer img{height:40px;width:auto}
   stroke-linecap="round"
   stroke-linejoin="round"
 >
-  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
-  <path d="m21.854 2.147-10.94 10.939" />
-</svg> Rejoindre le groupe Telegram de la borne 9</a></div></dialog>
+  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+</svg> Rejoindre l'espace d'échange de la borne 9</a></div></dialog>
 
 <script>
 document.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>document.getElementById(b.dataset.open).showModal()));
